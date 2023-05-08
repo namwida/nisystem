@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nisystem/static/css/main.d9d7645a.css",
-    "main.js": "/nisystem/static/js/main.ec7b4521.js",
+    "main.css": "/nisystem/static/css/main.ec6d902d.css",
+    "main.js": "/nisystem/static/js/main.e559bbb3.js",
     "static/js/787.d4c15b7a.chunk.js": "/nisystem/static/js/787.d4c15b7a.chunk.js",
     "index.html": "/nisystem/index.html",
-    "main.d9d7645a.css.map": "/nisystem/static/css/main.d9d7645a.css.map",
-    "main.ec7b4521.js.map": "/nisystem/static/js/main.ec7b4521.js.map",
+    "main.ec6d902d.css.map": "/nisystem/static/css/main.ec6d902d.css.map",
+    "main.e559bbb3.js.map": "/nisystem/static/js/main.e559bbb3.js.map",
     "787.d4c15b7a.chunk.js.map": "/nisystem/static/js/787.d4c15b7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9d7645a.css",
-    "static/js/main.ec7b4521.js"
+    "static/css/main.ec6d902d.css",
+    "static/js/main.e559bbb3.js"
   ]
 }
