@@ -96,6 +96,9 @@
   width: calc(100% / 3);
   border-right: 1px solid #cccccc;
 }
+.vision_box .item_list li:last-of-type {
+  border-right: none;
+}
 .vision_image_box {
   margin: 0 auto;
   width: 140px;
