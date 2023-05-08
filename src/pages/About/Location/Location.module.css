@@ -1,0 +1,18 @@
+.about_location .inner {
+    padding: 120px 0 160px;
+}
+.about_location p {
+    padding-bottom: 6px;
+    font-size: 18px;
+}
+.about_location .inner p:first-of-type {
+    margin-top: 63px;
+}
+.about_location p:last-of-type {
+    padding-bottom: 30px;
+}
+.about_location .map_image {
+    width: 100%;
+    height: 500px;
+    background-color: #6C6C6C;
+}

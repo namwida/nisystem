@@ -1,0 +1,31 @@
+.about_client .inner {
+  padding: 100px 0 140px;
+}
+.about_client h3 {
+  padding-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.about_client ul {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.about_client li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  border: 1px solid #cccccc;
+}
+.about_client img {
+  width: 180px;
+}
+.domestic h3:first-of-type,
+.overseas h3:first-of-type  {
+    margin-top: 63px;
+}
+.domestic ul:last-of-type {
+    margin-bottom: 100px;
+}
