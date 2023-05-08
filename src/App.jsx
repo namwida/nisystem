@@ -10,10 +10,12 @@ import AboutClient from "./pages/About/Client/Client";
 import AboutVendor from "./pages/About/Vendor/Vendor";
 import AboutLocation from "./pages/About/Location/Location";
 import NotFound from "./pages/NotFound/NotFound";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomeMain />} />
         <Route path="/about" element={<AboutCompany />} />

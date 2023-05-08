@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import PageTitle from "../../../components/PageTitle/PageTitle";
@@ -43,6 +44,7 @@ export default function AboutMessage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
