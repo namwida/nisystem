@@ -1,0 +1,113 @@
+.about_company {
+  width: 100%;
+}
+.outline_section {
+  padding: 100px 0 120px;
+}
+.outline_section table {
+  margin-top: 63px;
+  width: 100%;
+}
+.outline_section table tr:first-of-type {
+  border-top: 1px solid #707070;
+}
+.outline_section table tr:last-of-type {
+  border-bottom: 1px solid #707070;
+}
+.outline_section table tr {
+  border-bottom: 1px solid #cccccc;
+}
+.outline_section table th {
+  width: 220px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.outline_section table td {
+  padding: 20px 30px;
+  font-size: 16px;
+}
+.outline_section p:first-of-type {
+  margin: 30px 0;
+}
+/* mision */
+.mission_box {
+  margin-top: 63px;
+  padding: 70px 0;
+  text-align: center;
+  background-color: #6c6c6c;
+}
+.mission_box h3 {
+  color: #fff;
+}
+.mission_box h3::after {
+  background-color: #fff;
+}
+.mission_box h3,
+.vision_box h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mission_box h3::after,
+.vision_box h3::after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+}
+.mission_box p:first-of-type {
+  margin: 40px 0 22px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.mission_box p:last-of-type {
+  font-size: 16px;
+  color: #a1a4aa;
+}
+.vision_box {
+  padding: 60px 0 160px;
+  text-align: center;
+}
+.vision_box h3::after {
+  background-color: #333;
+}
+.vision_box .destription_ko {
+  padding: 40px 0 22px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.vision_box .destription_en {
+  font-size: 16px;
+  color: #666;
+}
+.vision_box .item_list {
+  margin-top: 70px;
+  display: flex;
+}
+.vision_box .item_list li {
+  padding: 0 20px;
+  width: calc(100% / 3);
+  border-right: 1px solid #cccccc;
+}
+.vision_image_box {
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #e7e8e9;
+}
+.vision_test_box p:first-of-type {
+  padding: 42px 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.vision_test_box p {
+  font-size: 16px;
+}
