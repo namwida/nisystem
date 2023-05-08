@@ -6,11 +6,14 @@ import HomeMain from "./Home/Main/Main";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<HomeMain />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <h3>이거사####</h3>
+    </div>
+    // <BrowserRouter basename={process.env.PUBLIC_URL}>
+    //   <Routes>
+    //     <Route path="/" element={<HomeMain />} />
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 
