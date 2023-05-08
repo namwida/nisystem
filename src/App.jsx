@@ -16,14 +16,13 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<HomeMain />} />
-        <Route path="/about" element={<AboutCompany />}>
-          <Route path="company" element={<AboutCompany />} />
-          <Route path="message" element={<AboutMessage />} />
-          <Route path="history" element={<AboutHistory />} />
-          <Route path="client" element={<AboutClient />} />
-          <Route path="vendor" element={<AboutVendor />} />
-          <Route path="location" element={<AboutLocation />} />
-        </Route>
+        <Route path="/about" element={<AboutCompany />} />
+        <Route path="/about/company" element={<AboutCompany />} />
+        <Route path="/about/message" element={<AboutMessage />} />
+        <Route path="/about/history" element={<AboutHistory />} />
+        <Route path="/about/client" element={<AboutClient />} />
+        <Route path="/about/vendor" element={<AboutVendor />} />
+        <Route path="/about/location" element={<AboutLocation />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
