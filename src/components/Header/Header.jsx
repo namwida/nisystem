@@ -3,13 +3,6 @@ import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
-  const menuList = [
-    { name: "Home", link: "/" },
-    { name: "회사소개", link: "/" },
-    { name: "사업소개", link: "/" },
-    { name: "고객문의", link: "/" },
-    { name: "채용", link: "/" },
-  ];
   return (
     <header className={styles.header}>
       <div className={`inner ${styles.inner}`}>
@@ -46,19 +39,19 @@ export default function Header() {
           </div>
           <div className={styles.list_1dep}>
             <NavLink
-              to="/business"
+              to="/business/firewall/fortinet"
               className={({ isActive }) => (isActive ? "selected" : "")}
             >
               사업소개
             </NavLink>
             <div className={styles.list_2dep}>
-              <Link to="/">Firewall</Link>
-              <Link to="/">Switch</Link>
-              <Link to="/">AP</Link>
-              <Link to="/">Software</Link>
-              <Link to="/">MSP</Link>
-              <Link to="/">Consulting</Link>
-              <Link to="/">Global Service</Link>
+              <Link to="/business/firewall/fortinet">Firewall</Link>
+              <Link to="/business/switch">Switch</Link>
+              <Link to="/business/ap">AP</Link>
+              <Link to="/business/software">Software</Link>
+              <Link to="/business/msp">MSP</Link>
+              <Link to="/business/consulting">Consulting</Link>
+              <Link to="/business/global">Global Service</Link>
             </div>
           </div>
           <div className={styles.list_1dep}>

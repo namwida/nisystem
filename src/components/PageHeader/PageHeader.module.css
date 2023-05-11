@@ -6,11 +6,12 @@
 }
 .page_header h1 {
   padding: 100px 0 16px;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: bold;
   color: #fff;
 }
 .page_header p {
   font-size: 18px;
   color: #fff;
+  line-height: 1.2;
 }

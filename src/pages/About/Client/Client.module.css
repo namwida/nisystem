@@ -1,4 +1,4 @@
-.about_client .inner {
+.about_client {
   padding: 100px 0 140px;
 }
 .about_client h3 {
@@ -21,10 +21,6 @@
 }
 .about_client img {
   width: 180px;
-}
-.domestic h3:first-of-type,
-.overseas h3:first-of-type  {
-    margin-top: 63px;
 }
 .domestic ul:last-of-type {
     margin-bottom: 100px;

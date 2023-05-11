@@ -1,31 +1,30 @@
 import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
+import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
-import PageTitle from "../../../components/PageTitle/PageTitle";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import styles from "./Company.module.css";
 
 export default function AboutCompany() {
   return (
-    <>
-      <Header />
+    <Layout>
+      <PageHeader
+        title="엔아이시스템 소개"
+        destription="엔아이시스템은 고객을 우선적으로 생각하는 기업입니다."
+      />
       <main className={styles.about_company}>
-        <PageHeader
-          title="엔아이시스템 소개"
-          destription="엔아이시스템은 고객을 우선적으로 생각하는 기업입니다."
-        />
         <OutlineSection />
         <MissionAndVisionSection />
       </main>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 
 function OutlineSection() {
   return (
-    <section className={styles.outline_section}>
-      <div className={`${styles.inner} inner`}>
-        <PageTitle title="개요" />
+    <>
+      <SectionTitle title="개요" />
+      <section className={`${styles.outline_section} inner`}>
         <table>
           <tr>
             <th>회사명</th>
@@ -66,32 +65,30 @@ function OutlineSection() {
           생각하며, 모든 임직원은 열정과 신뢰를 바탕으로 최고의 서비스를 약속
           드립니다.
         </p>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
 function MissionAndVisionSection() {
   return (
-    <section>
-      <div className="inner">
-        <PageTitle title="미션 및 비전" />
-      </div>
-      <div className={styles.mission_box}>
-        <div className="inner">
-          <h3>미션</h3>
-          <p>
-            최고의 컴포넌트와 독창적인 솔루션으로
-            <br /> 모두에게 가치있는 경험을 제공한다
-          </p>
-          <p>
-            We bring the best components and compelling solutions
-            <br /> that enrich people's experience
-          </p>
+    <>
+      <SectionTitle title="미션 및 비전" />
+      <section>
+        <div className={styles.mission_box}>
+          <div className="inner">
+            <h3>미션</h3>
+            <p>
+              최고의 컴포넌트와 독창적인 솔루션으로
+              <br /> 모두에게 가치있는 경험을 제공한다
+            </p>
+            <p>
+              We bring the best components and compelling solutions
+              <br /> that enrich people's experience
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={styles.vision_box}>
-        <div className="inner">
+        <div className={`${styles.vision_box} inner`}>
           <h3>비전</h3>
           <p className={styles.destription_ko}>
             나도 일하고 싶고,
@@ -127,7 +124,7 @@ function MissionAndVisionSection() {
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

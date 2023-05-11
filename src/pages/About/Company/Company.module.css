@@ -1,11 +1,11 @@
 .about_company {
+  padding: 100px 0 140px;
   width: 100%;
 }
 .outline_section {
-  padding: 120px 0 160px;
+  margin-bottom: 80px;
 }
 .outline_section table {
-  margin-top: 63px;
   width: 100%;
 }
 .outline_section table tr:first-of-type {
@@ -24,7 +24,10 @@
   text-align: center;
 }
 .outline_section table td {
-  padding: 20px 30px;
+  padding: 14px 30px;
+  font-size: 16px;
+}
+.outline_section p {
   font-size: 16px;
 }
 .outline_section p:first-of-type {
@@ -72,7 +75,7 @@
   color: #a1a4aa;
 }
 .vision_box {
-  padding: 60px 0 160px;
+  padding-top: 60px;
   text-align: center;
 }
 .vision_box h3::after {

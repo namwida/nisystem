@@ -1,7 +1,8 @@
 .page_title {
   position: relative;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: bold;
+  margin-bottom: 63px;
 }
 .page_title::after {
   position: absolute;

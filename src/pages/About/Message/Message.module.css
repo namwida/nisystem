@@ -1,8 +1,7 @@
-.about_message .inner {
-  padding: 120px 0 160px;
+.about_message {
+  padding: 100px 0 140px;
 }
 .contens_box {
-  margin-top: 63px;
   display: flex;
   gap: 80px;
   align-items: center;
