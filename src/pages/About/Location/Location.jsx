@@ -1,5 +1,3 @@
-import Footer from "../../../components/Footer/Footer";
-import Header from "../../../components/Header/Header";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
@@ -15,9 +13,9 @@ export default function AboutLocation() {
       <main className={styles.about_location}>
         <SectionTitle title="주소 및 연락처" />
         <section className="inner">
-          <p>경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)</p>
-          <p>전화: 1666-2869</p>
-          <p>팩스: 050-7088-2588</p>
+          <p><span>주소.</span> 경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)</p>
+          <p><span>전화.</span> 1666-2869</p>
+          <p><span>팩스.</span> 050-7088-2588</p>
           <div className={styles.map_image}></div>
         </section>
       </main>

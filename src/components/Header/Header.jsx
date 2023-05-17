@@ -51,12 +51,11 @@ export default function Header() {
               <Link to="/business/software">Software</Link>
               <Link to="/business/msp">MSP</Link>
               <Link to="/business/consulting">Consulting</Link>
-              <Link to="/business/global">Global Service</Link>
             </div>
           </div>
           <div className={styles.list_1dep}>
             <NavLink
-              to="/costomer"
+              to="/customer"
               className={({ isActive }) => (isActive ? "selected" : "")}
             >
               고객문의

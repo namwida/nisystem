@@ -5,6 +5,9 @@
     padding-bottom: 6px;
     font-size: 18px;
 }
+.about_location span {
+    font-weight: bold;
+}
 .about_location p:last-of-type {
     padding-bottom: 30px;
 }

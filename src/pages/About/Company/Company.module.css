@@ -18,13 +18,13 @@
   border-bottom: 1px solid #cccccc;
 }
 .outline_section table th {
-  width: 220px;
+  width: 200px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 .outline_section table td {
-  padding: 14px 30px;
+  padding: 14px 20px;
   font-size: 16px;
 }
 .outline_section p {

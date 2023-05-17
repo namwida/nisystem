@@ -14,11 +14,12 @@ import ScrollToTop from "./ScrollToTop";
 import Firewall from "./pages/Besiness/Firewall/Firewall";
 import AP from "./pages/Besiness/AP/AP";
 import Consulting from "./pages/Besiness/Consulting/Consulting";
-import Global from "./pages/Besiness/Global/Global";
 import Software from "./pages/Besiness/Software/Software";
 import Switch from "./pages/Besiness/Switch/Switch";
 import MSP from "./pages/Besiness/MSP/MSP";
 import Fortinet from "./pages/Besiness/Firewall/Fortinet/Fortinet";
+import Customer from "./pages/Customer/Customer";
+import Employment from "./pages/Employment/Employment";
 
 function App() {
   return (
@@ -39,10 +40,11 @@ function App() {
         <Route path="/business/firewall" element={<Firewall />} >
           <Route path="fortinet" element={<Fortinet />} />
         </Route>
-        <Route path="/business/global" element={<Global />} />
         <Route path="/business/msp" element={<MSP />} />
         <Route path="/business/software" element={<Software />} />
         <Route path="/business/switch" element={<Switch />} />
+        <Route path="/customer" element={<Customer />} />
+        <Route path="/employment" element={<Employment />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,52 @@
+.employment {
+  padding: 100px 0 140px;
+}
+.employment .image_box {
+  width: 40%;
+  height: 350px;
+  background-color: #ddd;
+}
+.process {
+  margin-bottom: 80px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.process ol {
+  width: 50%;
+}
+.process ol li {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.process ol li p:first-of-type {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.benefit {
+  display: flex;
+  gap: 30px;
+}
+.benefit dl {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  word-break: keep-all;
+  font-size: 18px;
+}
+.benefit dt {
+  order: 1;
+  font-weight: bold;
+}
+.benefit .benefit_image {
+  order: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+}
+.benefit dd:last-of-type {
+  order: 2;
+}

@@ -1,5 +1,3 @@
-import Footer from "../../../components/Footer/Footer";
-import Header from "../../../components/Header/Header";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
@@ -25,69 +23,24 @@ export default function AboutClient() {
 function DomesticSection() {
   return (
     <section className={`${styles.domestic} inner`}>
-      <h3>항공사 / IT기업</h3>
-      <ul>
-        <li>
+      <dl>
+        <dt>텍슨</dt>
+        <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
+            alt="텍슨 로고"
           />
-        </li>
-        <li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>오로라월드</dt>
+        <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
+            src={`${process.env.PUBLIC_URL}/images/aurora.svg`}
+            alt="오로라월드 로고"
           />
-        </li>
-      </ul>
-      <h3>공공기관 / 의료기관</h3>
-      <ul>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-      </ul>
-      <h3>통신사 / 제조업</h3>
-      <ul>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
-          />
-        </li>
-      </ul>
+        </dd>
+      </dl>
     </section>
   );
 }
@@ -95,21 +48,126 @@ function DomesticSection() {
 function OverseasSection() {
   return (
     <section className={`${styles.overseas} inner`}>
-      <h3>IT기업</h3>
-      <ul>
-        <li>
+      <dl>
+        <dt>
           <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
+            src={`${process.env.PUBLIC_URL}/images/china.svg`}
+            alt="중국 국기"
           />
-        </li>
-        <li>
+          <p>서진 심천</p>
+        </dt>
+        <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/eastar_logo.png`}
-            alt=""
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
+            alt="서진 심천 로고"
           />
-        </li>
-      </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
+            alt="베트남 국기"
+          />
+          <p>서진 오토</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
+            alt="서진 오토 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
+            alt="베트남 국기"
+          />
+          <p>서진시스템 비나</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
+            alt="서진시스템 비나 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
+            alt="베트남 국기"
+          />
+          <p>서진 비나</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
+            alt="서진 비나 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
+            alt="베트남 국기"
+          />
+          <p>텍슨 베트남</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
+            alt="텍슨 베트남 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/usa.svg`}
+            alt="미국 국기"
+          />
+          <p>텍슨 USA</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
+            alt="텍슨 USA 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
+            alt="베트남 국기"
+          />
+          <p>텍슨 비나</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
+            alt="텍슨 비나 로고"
+          />
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/china.svg`}
+            alt="중국 국기"
+          />
+          <p>텍슨 차이나</p>
+        </dt>
+        <dd>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
+            alt="텍슨 차이나 로고"
+          />
+        </dd>
+      </dl>
     </section>
   );
 }

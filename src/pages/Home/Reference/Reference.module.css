@@ -27,3 +27,6 @@
   font-weight: bold;
   color: #fff;
 }
+.description a span {
+  color: #fff;
+}
