@@ -5,7 +5,7 @@ import HomeBanner from "../Banner/Banner";
 import HomeBusiness from "../Business/Business";
 import HomeCompany from "../Company/Company";
 import styles from "./Main.module.css";
-import HomeReference from "../Reference/Reference";
+import Homereference2 from "../Reference/Reference2";
 
 export default function HomeMain() {
   return (
@@ -14,7 +14,8 @@ export default function HomeMain() {
       <main className={styles.home_main}>
         <HomeBanner />
         <HomeAbout />
-        <HomeReference />
+        {/* <HomeReference /> */}
+        <Homereference2 />
         <HomeBusiness />
         <HomeCompany />
       </main>

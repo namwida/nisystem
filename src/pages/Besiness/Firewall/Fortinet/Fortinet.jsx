@@ -12,7 +12,8 @@ export default function Fortinet() {
       <SectionTitle title="성능 및 주요기능" />
       <Component />
       <SectionTitle title="모델 및 사용" />
-      <Model />
+      {/* <Model /> */}
+      <Model2 />
     </main>
   );
 }
@@ -191,6 +192,66 @@ function Model() {
           </div>
         </li>
       </ul>
+    </section>
+  );
+}
+
+function Model2() {
+  return (
+    <section className={styles.modle2}>
+      <table className="inner">
+        <thead>
+          <tr>
+            <th></th>
+            <th>방화벽</th>
+            <th>위협보호</th>
+            <th>인터페이스</th>
+            <th>인터페이스</th>
+            <th>인터페이스</th>
+            <th>인터페이스</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <span className={styles.best}>Best</span>FortiGate 200F
+            </th>
+            <td>20Gbps</td>
+            <td>1.2Gbps</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+          </tr>
+          <tr>
+            <th>FortiGate 80F</th>
+            <td>20Gbps</td>
+            <td>1.2Gbps</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+          </tr>
+          <tr>
+            <th>FortiGate 70F</th>
+            <td>20Gbps</td>
+            <td>1.2Gbps</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+          </tr>
+          <tr>
+            <th>FortiGate 70F</th>
+            <td>20Gbps</td>
+            <td>1.2Gbps</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>복수의 GE RJ45, GE SFP 슬롯</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   );
 }

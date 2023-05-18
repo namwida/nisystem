@@ -64,7 +64,7 @@ function Benefit() {
   return (
     <section className={`${styles.benefit} inner`}>
       <dl>
-        <dt>복리후생</dt>
+        <dt>4대보험</dt>
         <dd className={styles.benefit_image}></dd>
         <dd>국민연금, 고용보험, 산재보험, 건강보험</dd>
       </dl>

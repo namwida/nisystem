@@ -20,10 +20,10 @@ export default function HomeReference() {
             >
               <path
                 d="M32.5 2L39 8.5L32.5 15"
-                stroke="#fff"
+                stroke="#333"
                 stroke-miterlimit="10"
               />
-              <path d="M39 8.5H0" stroke="#fff" />
+              <path d="M39 8.5H0" stroke="#333" />
             </svg>
           </Link>
         </div>

@@ -13,7 +13,9 @@
 .company_box {
   padding: 30px 0;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  column-gap: 30px;
   opacity: 0.6;
 }
 .company_box li {
