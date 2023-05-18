@@ -149,7 +149,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 30px;
   font-size: 24px;
   font-weight: 600;
   border-bottom: 1px solid #ccc;
@@ -165,17 +164,19 @@
 .modle2 tbody td {
   border-bottom: 1px solid #ccc;
 }
-.modle2 thead th:nth-child(1) {
-  border-bottom: none;
+.modle2 tbody img {
+  width: 100%;
 }
 .modle2 thead th:nth-child(1),
 .modle2 tbody th {
+  padding-top: 30px;
   height: 90px;
 }
 .modle2 thead th:nth-child(2),
 .modle2 tbody td:nth-child(2) {
+  margin-top: 10px;
   padding-top: 16px;
-  height: 70px;
+  height: 110px;
 }
 .modle2 thead th:nth-child(3),
 .modle2 tbody td:nth-child(3) {
@@ -199,6 +200,11 @@
 }
 .modle2 thead th:nth-child(7),
 .modle2 tbody td:nth-child(7) {
+  padding-top: 16px;
+  height: 70px;
+}
+.modle2 thead th:nth-child(8),
+.modle2 tbody td:nth-child(8) {
   padding-top: 16px;
   height: 70px;
   border-bottom: none;

@@ -202,7 +202,8 @@ function Model2() {
       <table className="inner">
         <thead>
           <tr>
-            <th></th>
+            <th>모델명</th>
+            <th>이미지</th>
             <th>방화벽</th>
             <th>위협보호</th>
             <th>인터페이스</th>
@@ -216,6 +217,12 @@ function Model2() {
             <th>
               <span className={styles.best}>Best</span>FortiGate 200F
             </th>
+            <td>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
+                alt=""
+              />
+            </td>
             <td>20Gbps</td>
             <td>1.2Gbps</td>
             <td>복수의 GE RJ45, GE SFP 슬롯</td>
@@ -225,6 +232,12 @@ function Model2() {
           </tr>
           <tr>
             <th>FortiGate 80F</th>
+            <td>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
+                alt=""
+              />
+            </td>
             <td>20Gbps</td>
             <td>1.2Gbps</td>
             <td>복수의 GE RJ45, GE SFP 슬롯</td>
@@ -234,6 +247,12 @@ function Model2() {
           </tr>
           <tr>
             <th>FortiGate 70F</th>
+            <td>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
+                alt=""
+              />
+            </td>
             <td>20Gbps</td>
             <td>1.2Gbps</td>
             <td>복수의 GE RJ45, GE SFP 슬롯</td>
@@ -243,6 +262,12 @@ function Model2() {
           </tr>
           <tr>
             <th>FortiGate 70F</th>
+            <td>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
+                alt=""
+              />
+            </td>
             <td>20Gbps</td>
             <td>1.2Gbps</td>
             <td>복수의 GE RJ45, GE SFP 슬롯</td>
