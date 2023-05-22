@@ -1,0 +1,6 @@
+.besiness_msp {
+  padding-top: 100px;
+}
+.besiness_msp section:not(:last-child) {
+  margin-bottom: 80px;
+}

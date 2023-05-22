@@ -6,8 +6,10 @@ export default function Customer() {
   return (
     <Layout>
       <PageHeader
+        gnbname="customer"
         title="고객문의"
-        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야에서 여러 기업들과 Partnership을 맺고 사업을 진행하고 있습니다."
+        destription="엔아이시스템은 고객님의 말씀에 귀를 기울이며."
+        destription_add="언제나 편안한 서비스를 제공하기 위하여 최선을 다하겠습니다."
       />
       <main className={`${styles.customer} inner`}>
         <section>
@@ -17,8 +19,10 @@ export default function Customer() {
           </p>
           <form>
             <div className={styles.input_box}>
-              <label htmlFor="">문의유형</label>
-              <select name="" id="">
+              <label htmlFor="type">
+                <span>*</span>문의유형
+              </label>
+              <select className={styles.type} name="type" id="type">
                 <option value="제품">제품</option>
                 <option value="컨설팅">컨설팅</option>
                 <option value="MSP">MSP</option>
@@ -29,23 +33,33 @@ export default function Customer() {
               </select>
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="company">회사명</label>
+              <label htmlFor="company">
+                <span>*</span>회사명
+              </label>
               <input type="text" name="company" id="company" required />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="pic">담당자명</label>
+              <label htmlFor="pic">
+                <span>*</span>담당자명
+              </label>
               <input type="text" name="pic" id="pic" required />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="phone">연락처</label>
+              <label htmlFor="phone">
+                <span>*</span>연락처
+              </label>
               <input type="tel" name="phone" id="phone" required />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="email">이메일</label>
+              <label htmlFor="email">
+                <span>*</span>이메일
+              </label>
               <input type="email" name="email" id="email" required />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="contents">문의 내용</label>
+              <label htmlFor="contents">
+                <span>*</span>문의 내용
+              </label>
               <textarea
                 name="contents"
                 id="contents"
@@ -55,7 +69,9 @@ export default function Customer() {
               ></textarea>
             </div>
             <div className={styles.agree_box}>
-              <label>개인정보 수집 및 이용에 동의</label>
+              <label>
+                <span>*</span>개인정보 수집 및 이용에 동의
+              </label>
               <div>
                 <dl>
                   <dt>개인정보 수집 항목</dt>

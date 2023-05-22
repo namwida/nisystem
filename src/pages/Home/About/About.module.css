@@ -23,12 +23,23 @@
     width: 200px;
     text-align: center;
 }
-.home_about ul li img {
+.home_about ul li .image_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 25px;
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background-color: #505050;
+}
+.home_about ul li:nth-child(odd) .image_box {
+    background-color: #0162a2;
+}
+.home_about ul li:nth-child(even) .image_box {
+    background-color: #636a72;
+}
+.home_about ul li .image_box svg {
+   fill: #fff;
 }
 .home_about ul li div p:nth-of-type(1){
     margin-bottom: 8px;

@@ -7,8 +7,10 @@ export default function AboutClient() {
   return (
     <Layout>
       <PageHeader
+        gnbname="about"
         title="고객사"
-        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야에서 여러 기업들과 Partnership을 맺고 사업을 진행하고 있습니다."
+        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야에서"
+        destription_add="여러 기업들과 Partnership을 맺고 사업을 진행하고 있습니다."
       />
       <main className={styles.about_client}>
         <SectionTitle title="국내" />

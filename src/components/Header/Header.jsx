@@ -8,7 +8,7 @@ export default function Header() {
       <div className={`inner ${styles.inner}`}>
         <Link to="/" className={styles.logo}>
           <img
-            src={`${process.env.PUBLIC_URL}/images/logo.png`}
+            src={`${process.env.PUBLIC_URL}/images/logo.jpg`}
             alt="NI System 로고"
           />
         </Link>
@@ -46,9 +46,9 @@ export default function Header() {
             </NavLink>
             <div className={styles.list_2dep}>
               <Link to="/business/firewall/fortinet">Firewall</Link>
-              <Link to="/business/switch">Switch</Link>
-              <Link to="/business/ap">AP</Link>
-              <Link to="/business/software">Software</Link>
+              <Link to="/business/switch/cisco">Switch</Link>
+              <Link to="/business/ap/cisco">AP</Link>
+              <Link to="/business/software/est">Software</Link>
               <Link to="/business/msp">MSP</Link>
               <Link to="/business/consulting">Consulting</Link>
             </div>

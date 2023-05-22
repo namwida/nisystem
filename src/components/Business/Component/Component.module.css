@@ -1,0 +1,46 @@
+.business_component > div {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 40px;
+  border: 1px solid #f3f3f3;
+}
+.business_component h3 {
+  padding: 12px 0 18px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.business_component > div:last-of-type {
+  margin-bottom: 0;
+}
+.business_component > div > div {
+  display: flex;
+}
+.business_component > div > div ul {
+  max-width: 700px;
+  width: 80%;
+}
+.business_component > div > div li {
+  position: relative;
+  padding-left: 12px;
+  padding-bottom: 6px;
+  font-size: 16px;
+}
+.business_component > div > div li::after {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #333;
+}
+.business_component > div > div img {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 250px;
+}

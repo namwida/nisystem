@@ -1,3 +1,5 @@
+import { AiOutlineSafety, AiTwotoneIdcard } from "react-icons/ai";
+import { BsAward, BsHandThumbsUp, BsHexagonHalf } from "react-icons/bs";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
@@ -7,8 +9,9 @@ export default function AboutCompany() {
   return (
     <Layout>
       <PageHeader
+        gnbname="about"
         title="엔아이시스템 소개"
-        destription="엔아이시스템은 고객을 우선적으로 생각하는 기업입니다."
+        destription="Network 전문인력을 통해 전문화된 서비스를 제공합니다."
       />
       <main className={styles.about_company}>
         <OutlineSection />
@@ -47,7 +50,7 @@ function OutlineSection() {
             </td>
           </tr>
         </table>
-        <p>
+        {/* <p>
           ㈜엔아이시스템의 홈페이지를 찾아주셔서 감사합니다. ㈜엔아이시스템은
           2021년 12월에 설립하여 최고의 네트워크보안 기술력으로 보안시스템의
           구축과 컨설팅을 제공하는 정보보안 전문기업 입니다. 2000년부터 방화벽,
@@ -62,7 +65,7 @@ function OutlineSection() {
           사고’, ‘공정한 분배’를 바탕으로 고객과 직원의 가치를 최우선으로
           생각하며, 모든 임직원은 열정과 신뢰를 바탕으로 최고의 서비스를 약속
           드립니다.
-        </p>
+        </p> */}
       </section>
     </>
   );
@@ -77,44 +80,48 @@ function MissionAndVisionSection() {
           <div className="inner">
             <h3>미션</h3>
             <p>
-              최고의 컴포넌트와 독창적인 솔루션으로
+              전문성있는 네트워크 기술로
               <br /> 모두에게 가치있는 경험을 제공한다
             </p>
             <p>
-              We bring the best components and compelling solutions
-              <br /> that enrich people's experience
+              With professional network technology
+              <br /> provide a valuable experience for everyone
             </p>
           </div>
         </div>
         <div className={`${styles.vision_box} inner`}>
           <h3>비전</h3>
           <p className={styles.destription_ko}>
-            나도 일하고 싶고,
-            <br /> 누구나 함께 일하고 싶어하는
-            <br /> 최고의 성장기업
+            누구나 함께 일하고 싶어하는
+            <br /> 최고의 네트워크 기업
           </p>
           <p className={styles.destription_en}>
-            We bring the best components and compelling solutions
-            <br />
-            that enrich people's experience
+            The best network company
+            <br /> anyone wants to work with
           </p>
           <ul className={styles.item_list}>
             <li>
-              <div className={styles.vision_image_box}></div>
+              <div className={styles.vision_image_box}>
+                <BsAward size="70" fill="#666" />
+              </div>
               <div className={styles.vision_test_box}>
                 <p>전문성</p>
                 <p>고객의 성공을 위해 최고의 기술에 집중한다.</p>
               </div>
             </li>
             <li>
-              <div className={styles.vision_image_box}></div>
+              <div className={styles.vision_image_box}>
+                <BsHexagonHalf size="70" fill="#666" />
+              </div>
               <div className={styles.vision_test_box}>
-                <p>안정성</p>
-                <p>오너십을 가지고 자신의 성장을 위해 노력한다.</p>
+                <p>신뢰성</p>
+                <p>누구나 믿고 맡길 수 있는 기업이 되도록 노력한다.</p>
               </div>
             </li>
             <li>
-              <div className={styles.vision_image_box}></div>
+              <div className={styles.vision_image_box}>
+                <BsHandThumbsUp size="70" fill="#666" />
+              </div>
               <div className={styles.vision_test_box}>
                 <p>도전성</p>
                 <p>핵심 분야에서 최고 수준의 전문가로 성장한다.</p>

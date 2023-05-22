@@ -1,5 +1,5 @@
 .customer {
-  padding: 60px 0 80px;
+  padding-top: 60px;
 }
 .customer section {
   max-width: 800px;
@@ -37,12 +37,19 @@ textarea {
 }
 .customer select {
   position: relative;
+  width: 300px;
   appearance: none;
-  background: #fff url(/public/images/select_arrow_ico.png) no-repeat 97% 50%;
+  background: #fff url(/public/images/select_arrow_ico.png) no-repeat 270px 50%;
 }
 .customer label:not([for="agree"]) {
   font-size: 18px;
   font-weight: bold;
+}
+.customer label:not([for="agree"]) span {
+  position: relative;
+  bottom: -3px;
+  margin-right: 4px;
+  color: #0b5b96;
 }
 .customer textarea {
   padding: 20px;

@@ -1,5 +1,5 @@
 .about_message {
-  padding: 100px 0 140px;
+  padding-top: 100px;
 }
 .contens_box {
   display: flex;
@@ -9,7 +9,8 @@
 .contens_box .image {
   width: 45%;
   height: 489px;
-  background-color: #6c6c6c;
+  background: url(/public/images/about/about_message.jpg) no-repeat center;
+  background-size: cover;
 }
 .contens_box .text_box {
   width: 45%;

@@ -1,0 +1,19 @@
+.business_service ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.business_service ul li {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 48%;
+  height: 200px;
+  background-color: #eee;
+  text-align: center;
+}
+.business_service ul li h3 {
+  font-size: 20px;
+  font-weight: bold;
+}

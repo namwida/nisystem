@@ -11,8 +11,8 @@ export default function HomeBusiness() {
               <div>
                 <h2>Firewall</h2>
                 <p>
-                  카카오모빌리티는 ‘스마트모빌리티’를 통해
-                  <br /> 더 여유 있고 가치 있는 일상을 만들어가겠습니다.
+                  업계 최고의 위협 보호 및 암호 해독 기능을 제공하며
+                  <br /> 통합 보안 네트워킹을 제공합니다.
                 </p>
                 <Link to="/">
                   <span>자세히 보기</span>
@@ -35,8 +35,8 @@ export default function HomeBusiness() {
             </div>
             <img
               className={styles.image}
-              src={`${process.env.PUBLIC_URL}/images/home_business.jpg`}
-              alt="NI System 로고"
+              src={`${process.env.PUBLIC_URL}/images/main/business_firewall.svg`}
+              alt="firewall"
             />
           </li>
           <li>
@@ -44,8 +44,9 @@ export default function HomeBusiness() {
               <div>
                 <h2>Switch</h2>
                 <p>
-                  사람들이 더 많은 것을 보고 느끼고 발견할 수 있도록 <br />
-                  생활을 변화시키는 이동 기술과 경험을 선보입니다.
+                  안전하고 지속 가능한 하이브리드 업부 수요를 충족하며
+                  <br />
+                  탁월한 경험을 제공합니다.
                 </p>
                 <Link to="/">
                   <span>자세히 보기</span>
@@ -68,7 +69,7 @@ export default function HomeBusiness() {
             </div>
             <img
               className={styles.image}
-              src={`${process.env.PUBLIC_URL}/images/home_business.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/main/business_switch.svg`}
               alt="NI System 로고"
             />
           </li>
@@ -77,9 +78,9 @@ export default function HomeBusiness() {
               <div>
                 <h2>MSP</h2>
                 <p>
-                  삶을 움직이는 모빌리티는 안전에서부터 시작합니다.
+                  전문인력 및 IT 자원을 활용하여 전반적인 고객사의
                   <br />
-                  승객과 드라이버, 모두의 안전을 위해 노력하겠습니다.
+                  IT 시스템을 체계적으로 운용, 관리해드립니다.
                 </p>
                 <Link to="/">
                   <span>자세히 보기</span>
@@ -102,7 +103,7 @@ export default function HomeBusiness() {
             </div>
             <img
               className={styles.image}
-              src={`${process.env.PUBLIC_URL}/images/home_business.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/main/business_consulting_2.svg`}
               alt="NI System 로고"
             />
           </li>

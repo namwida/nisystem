@@ -1,0 +1,6 @@
+.layout main section:not(:last-child) {
+  margin-bottom: 80px;
+}
+.layout main section:last-child {
+  margin-bottom: 140px;
+}

@@ -7,6 +7,7 @@ export default function AboutMessage() {
   return (
     <Layout>
       <PageHeader
+        gnbname="about"
         title="인사말"
         destription="엔아이시스템은 고객을 우선적으로 생각하는 기업입니다."
       />

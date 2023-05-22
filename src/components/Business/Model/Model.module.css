@@ -1,0 +1,100 @@
+.business_modle {
+  overflow-x: scroll;
+  padding: 30px;
+  background-color: #f3f3f3;
+}
+.business_modle table {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1285px;
+  width: 90%;
+  word-break: keep-all;
+}
+.business_modle thead th {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+}
+.business_modle tbody {
+  display: flex;
+  gap: 20px;
+}
+.business_modle thead tr {
+  display: block;
+  padding: 20px 0;
+}
+.business_modle tbody tr {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 240px;
+  background-color: #fff;
+}
+.business_modle tbody th {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+}
+.business_modle tbody td {
+  border-bottom: 1px solid #ccc;
+}
+.business_modle tbody img {
+  width: 100%;
+}
+.business_modle thead th:nth-child(1),
+.business_modle tbody th {
+  padding-top: 30px;
+  height: 90px;
+}
+.business_modle thead th:nth-child(2),
+.business_modle tbody td:nth-child(2) {
+  margin-top: 10px;
+  padding-top: 16px;
+  height: 110px;
+}
+.business_modle thead th:nth-child(3),
+.business_modle tbody td:nth-child(3) {
+  padding-top: 16px;
+  height: 70px;
+}
+.business_modle thead th:nth-child(4),
+.business_modle tbody td:nth-child(4) {
+  padding-top: 16px;
+  height: 70px;
+}
+.business_modle thead th:nth-child(5),
+.business_modle tbody td:nth-child(5) {
+  padding-top: 16px;
+  height: 90px;
+}
+.business_modle thead th:nth-child(6),
+.business_modle tbody td:nth-child(6) {
+  padding-top: 16px;
+  height: 90px;
+}
+.business_modle thead th:nth-child(7),
+.business_modle tbody td:nth-child(7) {
+  padding-top: 16px;
+  height: 90px;
+}
+.business_modle thead th:nth-child(8),
+.business_modle tbody td:nth-child(8) {
+  padding-top: 16px;
+  height: 90px;
+}
+.business_modle thead th:nth-child(9),
+.business_modle tbody td:nth-child(9) {
+  padding-top: 16px;
+  height: 70px;
+  border-bottom: none;
+}
+.business_modle tbody .datasheet {
+  width: 100%;
+}

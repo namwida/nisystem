@@ -7,6 +7,7 @@ export default function AboutHistory() {
   return (
     <Layout>
       <PageHeader
+        gnbname="about"
         title="연혁"
         destription="전문성을 바탕으로 최적화 컨설팅을 진행하며 최고의 서비스를 제공합니다. "
       />

@@ -1,0 +1,18 @@
+.business_advantages {
+  padding: 70px 0;
+  background-color: #f7f7f7;
+}
+.business_advantages h3 {
+  padding: 12px 0 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.business_advantages ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.business_advantages ul li {
+  width: 25%;
+}

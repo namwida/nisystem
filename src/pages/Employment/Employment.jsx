@@ -7,8 +7,9 @@ export default function Employment() {
   return (
     <Layout>
       <PageHeader
+        gnbname="employment"
         title="채용"
-        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야에서 여러 기업들과 Partnership을 맺고 사업을 진행하고 있습니다."
+        destription="엔아이시스템은 창의성과 도전정신을 갖춘 인재를 찾고 있습니다."
       />
       <main className={styles.employment}>
         <SectionTitle title="채용절차" />
