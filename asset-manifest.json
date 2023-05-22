@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/nisystem/static/css/main.ee0747fd.css",
-    "main.js": "/nisystem/static/js/main.6972133a.js",
+    "main.css": "/nisystem/static/css/main.27ae8194.css",
+    "main.js": "/nisystem/static/js/main.71d8e0e5.js",
     "static/js/787.d4c15b7a.chunk.js": "/nisystem/static/js/787.d4c15b7a.chunk.js",
+    "static/media/main_banner.svg": "/nisystem/static/media/main_banner.06ef7a7ab765441f7dfe.svg",
+    "static/media/about.png": "/nisystem/static/media/about.9c2ba54178309132f906.png",
+    "static/media/benefit_1.jpg": "/nisystem/static/media/benefit_1.9b2d4083136726d28f08.jpg",
+    "static/media/employment_2.png": "/nisystem/static/media/employment_2.f9b78b3b134698260744.png",
+    "static/media/customer_2.png": "/nisystem/static/media/customer_2.65d38bd3a6163d3bdfc1.png",
+    "static/media/business_3.png": "/nisystem/static/media/business_3.ba2d43ec2349b929056e.png",
+    "static/media/employment_2.jpg": "/nisystem/static/media/employment_2.290e332a15e54fb46560.jpg",
+    "static/media/benefit_3.jpg": "/nisystem/static/media/benefit_3.0df0d79788b2842b2d00.jpg",
+    "static/media/benefit_4.jpg": "/nisystem/static/media/benefit_4.386bdfaa8c847de359df.jpg",
+    "static/media/main_company.jpg": "/nisystem/static/media/main_company.fda69e1d09f9906f2806.jpg",
+    "static/media/about_message.jpg": "/nisystem/static/media/about_message.ebf1c2df71a684a266a9.jpg",
+    "static/media/benefti_2.jpg": "/nisystem/static/media/benefti_2.c2628f8fe44ceeabc0fa.jpg",
     "index.html": "/nisystem/index.html",
-    "main.ee0747fd.css.map": "/nisystem/static/css/main.ee0747fd.css.map",
-    "main.6972133a.js.map": "/nisystem/static/js/main.6972133a.js.map",
+    "main.27ae8194.css.map": "/nisystem/static/css/main.27ae8194.css.map",
+    "main.71d8e0e5.js.map": "/nisystem/static/js/main.71d8e0e5.js.map",
     "787.d4c15b7a.chunk.js.map": "/nisystem/static/js/787.d4c15b7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee0747fd.css",
-    "static/js/main.6972133a.js"
+    "static/css/main.27ae8194.css",
+    "static/js/main.71d8e0e5.js"
   ]
 }
