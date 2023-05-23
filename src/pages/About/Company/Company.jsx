@@ -1,5 +1,5 @@
 import { AiOutlineSafety, AiTwotoneIdcard } from "react-icons/ai";
-import { BsAward, BsHandThumbsUp, BsHexagonHalf } from "react-icons/bs";
+import { BsAward, BsGlobeAmericas, BsHandThumbsUp, BsHexagonHalf } from "react-icons/bs";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
@@ -33,11 +33,11 @@ function OutlineSection() {
           </tr>
           <tr>
             <th>사업분야</th>
-            <td>네트워크보안 시스템 구축 및 컨설팅</td>
+            <td>네트워크보안 시스템 구축 및 운용 유지</td>
           </tr>
           <tr>
             <th>설립일</th>
-            <td>2021년 12월 00일</td>
+            <td>2021년 12월</td>
           </tr>
           <tr>
             <th>대표전화</th>
@@ -102,7 +102,7 @@ function MissionAndVisionSection() {
           <ul className={styles.item_list}>
             <li>
               <div className={styles.vision_image_box}>
-                <BsAward size="70" fill="#666" />
+                <BsAward size="70"/>
               </div>
               <div className={styles.vision_test_box}>
                 <p>전문성</p>
@@ -111,7 +111,7 @@ function MissionAndVisionSection() {
             </li>
             <li>
               <div className={styles.vision_image_box}>
-                <BsHexagonHalf size="70" fill="#666" />
+                <BsHexagonHalf size="70" />
               </div>
               <div className={styles.vision_test_box}>
                 <p>신뢰성</p>
@@ -120,7 +120,7 @@ function MissionAndVisionSection() {
             </li>
             <li>
               <div className={styles.vision_image_box}>
-                <BsHandThumbsUp size="70" fill="#666" />
+                <BsGlobeAmericas size="70" />
               </div>
               <div className={styles.vision_test_box}>
                 <p>도전성</p>

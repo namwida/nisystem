@@ -14,7 +14,7 @@ export default function HomeBusiness() {
                   업계 최고의 위협 보호 및 암호 해독 기능을 제공하며
                   <br /> 통합 보안 네트워킹을 제공합니다.
                 </p>
-                <Link to="/">
+                <Link to="/business/firewall/fortinet">
                   <span>자세히 보기</span>
                   <svg
                     width="40"
@@ -48,7 +48,7 @@ export default function HomeBusiness() {
                   <br />
                   탁월한 경험을 제공합니다.
                 </p>
-                <Link to="/">
+                <Link to="/business/switch/cisco">
                   <span>자세히 보기</span>
                   <svg
                     width="40"
@@ -82,7 +82,7 @@ export default function HomeBusiness() {
                   <br />
                   IT 시스템을 체계적으로 운용, 관리해드립니다.
                 </p>
-                <Link to="/">
+                <Link to="/business/msp">
                   <span>자세히 보기</span>
                   <svg
                     width="40"

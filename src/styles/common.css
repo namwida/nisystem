@@ -12,6 +12,17 @@ a.selected {
   max-width: 1285px;
   width: 90%;
 }
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+li:hover,
+p:hover,
+dt:hover,
+dd:hover {
+  cursor: default;
+}
 /* 헤더 배경이미지 */
 .about {
   width: 100%;

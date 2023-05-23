@@ -55,17 +55,6 @@ export default function HomeAbout() {
               <p>Rack</p>
             </div>
           </li>
-          <li>
-            <div className={styles.image_box}>
-              <AiOutlineCustomerService size="70" />
-            </div>
-            <div className={styles.text_box}>
-              <p>
-                300<span>개</span>
-              </p>
-              <p>고객사</p>
-            </div>
-          </li>
         </ul>
       </div>
     </section>

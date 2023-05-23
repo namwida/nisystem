@@ -9,17 +9,32 @@ export default function Software() {
     <Layout>
       <PageHeader
         gnbname="business"
-        title="Software"
-        destription="고성능 스마트기기의 증가와 영상 통화 등 고급 애플리케이션 보급으로"
-        destription_add="기업은 빠르고 품질좋은 무선랜과 이를 위한 인프라를 필요로 합니다."
+        title="EST Security"
+        destription="다양한 보안 위협에 확실한 솔루션을 제시합니다."
       />
       <BusinessTabMenu>
         <li className={styles.topmenu_list}>
           <NavLink
-            to="/business/software/est"
+            to="/business/est/asm"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            EST
+            ASM
+          </NavLink>
+        </li>
+        <li className={styles.topmenu_list}>
+          <NavLink
+            to="/business/est/secure"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            시큐어 디스크
+          </NavLink>
+        </li>
+        <li className={styles.topmenu_list}>
+          <NavLink
+            to="/business/est/internet"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            인터넷 디스크
           </NavLink>
         </li>
       </BusinessTabMenu>

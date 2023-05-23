@@ -114,6 +114,12 @@
   background-color: #e7e8e9;
   /* background-color: #0162a2; */
 }
+.vision_image_box svg {
+  fill: #666;
+}
+.vision_box .item_list li:hover .vision_image_box svg {
+  fill: #0079cc;
+}
 .vision_test_box p:first-of-type {
   padding: 42px 0 12px;
   font-size: 18px;

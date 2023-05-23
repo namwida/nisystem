@@ -48,7 +48,7 @@ export default function Header() {
               <Link to="/business/firewall/fortinet">Firewall</Link>
               <Link to="/business/switch/cisco">Switch</Link>
               <Link to="/business/ap/cisco">AP</Link>
-              <Link to="/business/software/est">Software</Link>
+              <Link to="/business/est/asm">EST Security</Link>
               <Link to="/business/msp">MSP</Link>
               <Link to="/business/consulting">Consulting</Link>
             </div>

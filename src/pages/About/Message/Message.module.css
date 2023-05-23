@@ -8,7 +8,7 @@
 }
 .contens_box .image {
   width: 45%;
-  height: 489px;
+  height: 450px;
   background: url(/public/images/about/about_message.jpg) no-repeat center;
   background-size: cover;
 }
@@ -18,12 +18,10 @@
 .contens_box .text_box .message p {
   padding-bottom: 24px;
   line-height: 1.5;
-  font-size: 18px;
-  color: #666666;
+  font-size: 16px;
 }
 .contens_box .text_box .signature {
   margin-top: 20px;
   font-size: 22px;
   font-weight: 600;
-  color: #000;
 }

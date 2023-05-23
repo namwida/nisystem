@@ -4,3 +4,20 @@
 .besiness_msp section:not(:last-child) {
   margin-bottom: 80px;
 }
+/* 주요 서비스 */
+.service li:nth-child(1) {
+  background: url(/public/images/business/msp/msp_1.png);
+  background-size: cover;
+}
+.service li:nth-child(2) {
+  background: url(/public/images/business/msp/msp_2.png);
+  background-size: cover;
+}
+.service li:nth-child(3) {
+  background: url(/public/images/business/msp/msp_3.png);
+  background-size: cover;
+}
+.service li:nth-child(4) {
+  background: url(/public/images/business/msp/msp_4.png);
+  background-size: cover;
+}

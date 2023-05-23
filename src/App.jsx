@@ -28,7 +28,9 @@ import APCisco from "./pages/Besiness/AP/DetailPage/Cisco";
 import APFortinet from "./pages/Besiness/AP/DetailPage/Fortinet";
 import APZyxel from "./pages/Besiness/AP/DetailPage/Zyxel";
 import APAruba from "./pages/Besiness/AP/DetailPage/Aruba";
-import SoftwareEST from "./pages/Besiness/Software/DetailPage/EST";
+import ASM from "./pages/Besiness/Software/DetailPage/ASM";
+import Secure from "./pages/Besiness/Software/DetailPage/Secure";
+import Internet from "./pages/Besiness/Software/DetailPage/Internet";
 
 function App() {
   return (
@@ -61,8 +63,10 @@ function App() {
           <Route path="zyxel" element={<APZyxel />} />
           <Route path="aruba" element={<APAruba />} />
         </Route>
-        <Route path="/business/software" element={<Software />}>
-          <Route path="est" element={<SoftwareEST />} />
+        <Route path="/business/est" element={<Software />}>
+          <Route path="asm" element={<ASM />} />
+          <Route path="secure" element={<Secure />} />
+          <Route path="internet" element={<Internet />} />
         </Route>
         <Route path="/business/consulting" element={<Consulting />} />
         <Route path="/business/msp" element={<MSP />} />
