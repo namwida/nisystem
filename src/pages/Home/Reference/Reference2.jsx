@@ -6,36 +6,34 @@ export default function Reference2() {
     <section className={styles.home_reference2}>
       <div className={`${styles.inner} inner`}>
         <div className={styles.title_box}>
-          <h1>News</h1>
-          <p>엔아이시스템의 최근 소식 및 공지사항을 알려드립니다.</p>
-          {/* <h1>검증된 레퍼런스</h1>
-          <p>
-            전문성있는 서비스를 제공합니다. 엔아이시스템을 통해 구축된
-            레퍼런스를 확인해보세요.
-          </p> */}
-          {/* <Link to="/">
-            <span>자세히 보기</span>
-            <svg
-              width="40"
-              height="16"
-              viewBox="0 0 40 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M32.5 2L39 8.5L32.5 15"
-                stroke="#333"
-                stroke-miterlimit="10"
-              />
-              <path d="M39 8.5H0" stroke="#333" />
-            </svg>
-          </Link> */}
+          <p>17년 이상의 전문가가 진행한</p>
+          <h1>엔아이시스템의 구축사례</h1>
+          <Link to="/about/history" className={styles.more_btn}>
+            <p>더보기</p>
+            <span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                aria-hidden="true"
+                focusable="false"
+                class=""
+              >
+                <g clip-rule="evenodd" fill-rule="evenodd">
+                  <path d="m19.7273 12-6.3637-6.3636 1.2728-1.2728 7.6364 7.6364-7.6364 7.6364-1.2728-1.2728z"></path>
+                  <path d="m20 12.9h-18v-1.8h18z"></path>
+                </g>
+              </svg>
+            </span>
+          </Link>
         </div>
         <ul className={styles.content_box}>
           <li>
             <div className={styles.image_box}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/jeju.svg`}
+                src={`${process.env.PUBLIC_URL}/images/main/main_reference_jeju.svg`}
                 alt="제주항공 로고"
               />
             </div>
@@ -47,7 +45,7 @@ export default function Reference2() {
           <li>
             <div className={styles.image_box}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/jeju.svg`}
+                src={`${process.env.PUBLIC_URL}/images/main/main_reference_jeju.svg`}
                 alt="제주항공 로고"
               />
             </div>
@@ -59,7 +57,7 @@ export default function Reference2() {
           <li>
             <div className={styles.image_box}>
               <img
-                src={`${process.env.PUBLIC_URL}/images/jeju.svg`}
+                src={`${process.env.PUBLIC_URL}/images/main/main_reference_jeju.svg`}
                 alt="제주항공 로고"
               />
             </div>

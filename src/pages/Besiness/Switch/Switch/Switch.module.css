@@ -1,8 +1,14 @@
-.topmenu_list a {
+/* .topmenu_list a {
   color: #333;
   font-weight: 600;
 }
 .topmenu_list a.active {
   color: #fff;
   background-color: #0b5b96;
+} */
+.topmenu_list a.active {
+  font-size: 24px;
+  color: #349ce8;
+  border: 1px solid #349ce8;
+  font-weight: bold;
 }

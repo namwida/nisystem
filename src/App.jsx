@@ -31,6 +31,7 @@ import APAruba from "./pages/Besiness/AP/DetailPage/Aruba";
 import ASM from "./pages/Besiness/Software/DetailPage/ASM";
 import Secure from "./pages/Besiness/Software/DetailPage/Secure";
 import Internet from "./pages/Besiness/Software/DetailPage/Internet";
+import Partner from "./pages/About/Partner/Partner";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/about/company" element={<AboutCompany />} />
         <Route path="/about/message" element={<AboutMessage />} />
         <Route path="/about/history" element={<AboutHistory />} />
+        <Route path="/about/partner" element={<Partner />} />
         <Route path="/about/client" element={<AboutClient />} />
         <Route path="/about/vendor" element={<AboutVendor />} />
         <Route path="/about/location" element={<AboutLocation />} />

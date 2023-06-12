@@ -1,0 +1,15 @@
+.page_title {
+  margin-bottom: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page_title h2 {
+  padding: 6px 20px;
+  display: inline-block;
+  font-size: 40px;
+  /* color: #fff; */
+  font-weight: bold;
+  border-radius: 300px;
+  /* background-color: #36a2fe; */
+}

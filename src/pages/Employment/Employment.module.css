@@ -6,9 +6,32 @@
   height: 400px;
   background: url(/public/images/employment_2.jpg) no-repeat center;
   background-size: cover;
-  /* background-color: #ddd; */
 }
-.process {
+/* 채용절차 */
+.process ol {
+display: flex;
+gap: 10px;
+width: 100%;
+}
+.process ol li {
+  padding: 20px;
+  width: 25%;
+  border: solid 1px #ededed;
+}
+.process ol li p:nth-child(1) {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0070d2;
+}
+.process ol li p:nth-child(2) {
+  padding-bottom: 12px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.process ol li p:nth-child(3) {
+  font-size: 16px;
+}
+/* .process {
   margin-bottom: 80px;
   display: flex;
   gap: 60px;
@@ -24,7 +47,8 @@
 .process ol li p:first-of-type {
   margin-bottom: 6px;
   font-weight: bold;
-}
+} */
+/* 복리후생 */
 .benefit {
   display: flex;
   gap: 30px;
@@ -33,14 +57,13 @@
   display: flex;
   flex-direction: column;
   width: 25%;
-  border: 1px solid #e5e5e5;
-  text-align: center;
   word-break: keep-all;
   font-size: 18px;
 }
 .benefit dt {
-  padding: 20px 0 12px;
+  padding: 20px 0 4px;
   order: 1;
+  font-size: 20px;
   font-weight: bold;
 }
 .benefit .benefit_image {
@@ -50,6 +73,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 8px;
 }
 .benefit dl:nth-child(1) .benefit_image {
   background-image: url(/public/images/employment/benefit_1.jpg);
@@ -65,6 +89,6 @@
 }
 .benefit dd:last-of-type {
   order: 2;
-  padding: 20px;
   padding-top: 0;
+  font-size: 16px;
 }

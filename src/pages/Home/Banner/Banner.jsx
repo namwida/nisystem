@@ -9,7 +9,7 @@ export default function HomeBanner() {
           <br />
           IT service
         </p>
-        <p>Network 전문인력을 통해 전문화된 서비스를 제공합니다.</p>
+        {/* <p>Network 전문인력을 통해 전문화된 서비스를 제공합니다.</p> */}
       </div>
     </section>
   );

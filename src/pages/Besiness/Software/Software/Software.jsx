@@ -3,6 +3,7 @@ import Layout from "../../../../components/Layout/Layout";
 import PageHeader from "../../../../components/PageHeader/PageHeader";
 import styles from "./Software.module.css";
 import BusinessTabMenu from "../../../../components/Business/TapMenu.module.css/TapMenu";
+import BusinessTabMenu2 from "../../../../components/Business/TabMenu2/TabMenu2";
 
 export default function Software() {
   return (
@@ -12,7 +13,7 @@ export default function Software() {
         title="EST Security"
         destription="다양한 보안 위협에 확실한 솔루션을 제시합니다."
       />
-      <BusinessTabMenu>
+      <BusinessTabMenu2>
         <li className={styles.topmenu_list}>
           <NavLink
             to="/business/est/asm"
@@ -37,7 +38,7 @@ export default function Software() {
             인터넷 디스크
           </NavLink>
         </li>
-      </BusinessTabMenu>
+      </BusinessTabMenu2>
       <Outlet />
     </Layout>
   );

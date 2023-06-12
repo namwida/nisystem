@@ -16,7 +16,7 @@ export default function Header() {
           <div className={styles.list_1dep}>
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? "selected" : "")}
+              className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               Home
             </NavLink>
@@ -24,7 +24,7 @@ export default function Header() {
           <div className={styles.list_1dep}>
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? "selected" : "")}
+              className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               회사소개
             </NavLink>
@@ -33,14 +33,14 @@ export default function Header() {
               <Link to="/about/message">인사말</Link>
               <Link to="/about/history">연혁</Link>
               <Link to="/about/client">고객사</Link>
-              <Link to="/about/vendor">협력사</Link>
-              <Link to="/about/location">오시는 길</Link>
+              <Link to="/about/partner">벤더사/협력사</Link>
+              <Link to="/about/location">찾아오시는 길</Link>
             </div>
           </div>
           <div className={styles.list_1dep}>
             <NavLink
               to="/business/firewall/fortinet"
-              className={({ isActive }) => (isActive ? "selected" : "")}
+              className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               사업소개
             </NavLink>
@@ -56,7 +56,7 @@ export default function Header() {
           <div className={styles.list_1dep}>
             <NavLink
               to="/customer"
-              className={({ isActive }) => (isActive ? "selected" : "")}
+              className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               고객문의
             </NavLink>
@@ -64,7 +64,7 @@ export default function Header() {
           <div className={styles.list_1dep}>
             <NavLink
               to="/employment"
-              className={({ isActive }) => (isActive ? "selected" : "")}
+              className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               채용
             </NavLink>

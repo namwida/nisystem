@@ -6,6 +6,8 @@ import HomeBusiness from "../Business/Business";
 import HomeCompany from "../Company/Company";
 import styles from "./Main.module.css";
 import Homereference2 from "../Reference/Reference2";
+import HomeBusiness2 from "../Business2/Business2";
+import Customer from "../Customer/Customer";
 
 export default function HomeMain() {
   return (
@@ -13,11 +15,13 @@ export default function HomeMain() {
       <Header />
       <main className={styles.home_main}>
         <HomeBanner />
-        <HomeAbout />
+        {/* <HomeAbout /> */}
         {/* <HomeReference /> */}
+        <HomeBusiness2 />
         <Homereference2 />
-        <HomeBusiness />
-        <HomeCompany />
+        <Customer />
+        {/* <HomeBusiness /> */}
+        {/* <HomeCompany /> */}
       </main>
       <Footer />
     </>

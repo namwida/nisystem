@@ -13,7 +13,8 @@ export default function Employment() {
       />
       <main className={styles.employment}>
         <SectionTitle title="채용절차" />
-        <Process />
+        {/* <Process /> */}
+        <Process2 />
         <SectionTitle title="복리후생" />
         <Benefit />
       </main>
@@ -54,6 +55,44 @@ function Process() {
           <p>
             위와 같은 절차를 거쳐 같이 성장해갈 인재를 찾습니다. 합격통보는 면접
             합격자에게만 개별적으로 연락하며, 연락을 통해 입사일을 협의합니다.
+          </p>
+        </li>
+      </ol>
+    </section>
+  );
+}
+
+function Process2() {
+  return (
+    <section className={`${styles.process} inner`}>
+      <ol>
+        <li>
+          <p>01.</p>
+          <p>채용공고</p>
+          <p>충원사유 발생 시 수시로 채용공고를 게시</p>
+        </li>
+        <li>
+          <p>02.</p>
+          <p>서류전형</p>
+          <p>
+            해당 직무 및 분야에 대하여 지원자의 인성, 자질, 능력 및 경험 등을
+            종합적으로 고려해 서류 전형을 실시
+          </p>
+        </li>
+        <li>
+          <p>03.</p>
+          <p>면접</p>
+          <p>
+            서류전형 합격자에 한하여 실무진 면접을 진행하며, 면접을 통해 자질 및
+            역량 등을 종합적으로 검증하는 절차
+          </p>
+        </li>
+        <li>
+          <p>04.</p>
+          <p>최종합격</p>
+          <p>
+            합격통보는 면접 합격자에게만 개별적으로 연락하며, 연락을 통해
+            입사일을 협의
           </p>
         </li>
       </ol>

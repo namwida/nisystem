@@ -3,7 +3,7 @@
   line-height: 1.4;
   box-sizing: border-box;
 }
-a.selected {
+a.gnb_selected {
   font-weight: bold;
   color: #333;
 }
@@ -25,26 +25,27 @@ dd:hover {
 }
 /* 헤더 배경이미지 */
 .about {
+  border-radius: 4px;
   width: 100%;
   height: 100%;
-  background: url(/public/images/header/about.png) no-repeat center;
+  background: url(/public/images/header/header_company2.svg) no-repeat center;
   background-size: cover;
 }
 .business {
   width: 100%;
   height: 100%;
-  background: url(/public/images/header/business_3.png) no-repeat center;
+  background: url(/public/images/header/header_business6.svg) no-repeat center;
   background-size: cover;
 }
 .customer {
   width: 100%;
   height: 100%;
-  background: url(/public/images/header/customer_2.png) no-repeat center;
+  background: url(/public/images/header/header_customer3.svg) no-repeat center;
   background-size: cover;
 }
 .employment {
   width: 100%;
   height: 100%;
-  background: url(/public/images/header/employment_2.png) no-repeat center;
+  background: url(/public/images/header/header_employment4.svg) no-repeat center;
   background-size: cover;
 }

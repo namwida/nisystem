@@ -4,17 +4,18 @@
 .customer section {
   max-width: 800px;
   padding: 40px;
-  background-color: #f3f3f3;
+  background-color: #eef3f6;
+  border-radius: 4px;
 }
-.customer form > div {
+.customer form > div:not(:last-child) {
   margin-bottom: 24px;
 }
 .customer .description {
   margin-bottom: 36px;
-  padding-bottom: 36px;
-  color: #888;
+  padding-bottom: 24px;
+  color: #666;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   border-bottom: 1px solid #e5e5e5;
 }
 .customer .input_box {
@@ -25,12 +26,13 @@
 select {
   height: 42px;
   padding: 0 12px;
-  font-size: 18px;
 }
 .customer .input_box input,
 select,
 textarea {
-  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 .customer .input_box label {
   margin-bottom: 6px;
@@ -39,10 +41,11 @@ textarea {
   position: relative;
   width: 300px;
   appearance: none;
+  background-color: #fff;
   background: #fff url(/public/images/select_arrow_ico.png) no-repeat 270px 50%;
 }
 .customer label:not([for="agree"]) {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .customer label:not([for="agree"]) span {
@@ -81,6 +84,7 @@ textarea {
   gap: 6px;
 }
 .customer .checkbox_box label {
+  font-size: 15px;
   cursor: pointer;
 }
 .customer .button_box {
@@ -88,12 +92,13 @@ textarea {
 }
 .customer .button_box input {
   width: 100%;
-  height: 50px;
+  height: 42px;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  background-color: #0b5b96;
+  background-color: #0070d2;
   border: none;
+  border-radius: 4px;
   outline: none;
   cursor: pointer;
 }

@@ -1,0 +1,56 @@
+.home_business {
+  padding: 60px 0 80px;
+}
+.home_business ul {
+  display: flex;
+  gap: 20px;
+}
+.home_business ul li {
+  width: 25%;
+  height: 380px;
+  background-color: #e6ecf4;
+  border-radius: 8px;
+  background-size: 170px;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
+}
+.home_business ul li:hover {
+  background-size: 187px;
+  transition: all 0.3s linear;
+}
+.home_business ul li:nth-child(1) {
+  background-image: url(/public/images/main/main_business_1.svg);
+}
+.home_business ul li:nth-child(2) {
+  background-image: url(/public/images/main/main_business_4.svg);
+}
+.home_business ul li:nth-child(3) {
+  background-image: url(/public/images/main/main_business_32.svg);
+}
+.home_business ul li:nth-child(4) {
+  background-image: url(/public/images/main/main_business_42.svg);
+}
+.home_business ul li a {
+  display: block;
+  padding: 27px 32px;
+  width: 100%;
+  height: 100%;
+}
+.home_business h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.home_business p {
+  font-size: 16px;
+  cursor: pointer;
+}
+.home_business .more_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 215px;
+  font-size: 14px;
+  font-weight: bold;
+}

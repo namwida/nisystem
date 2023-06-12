@@ -1,8 +1,9 @@
 .about_history {
-  padding: 100px 0 140px;
+  overflow: hidden;
+  padding-top: 80px;
 }
 .year_area:first-of-type {
-  margin-bottom: 120px;
+  /* margin-bottom: 40px; */
 }
 .year_area li {
   position: relative;
@@ -22,8 +23,8 @@
   position: relative;
   margin-left: 350px;
   width: 180px;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: bold;
 }
 .year_area .year.first::before {
   position: absolute;
@@ -44,14 +45,14 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #0b5b96;
+  background-color: #0079cc;
 }
 .year_area .month {
   position: relative;
   display: flex;
   gap: 30px;
   margin-left: 530px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   padding-left: 30px;
   width: 520px;
 }
@@ -71,7 +72,7 @@
 .year_area .month dt {
   position: relative;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .year_area .month dt::before {
@@ -89,7 +90,7 @@
 .year_area .month dd {
   position: relative;
   padding-left: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-size: 16px;
 }
 .year_area .month dd::before {

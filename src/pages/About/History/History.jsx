@@ -12,10 +12,12 @@ export default function AboutHistory() {
         destription="전문성을 바탕으로 최적화 컨설팅을 진행하며 최고의 서비스를 제공합니다. "
       />
       <main className={styles.about_history}>
-        <SectionTitle title="회사 연혁" />
-        <CompanyHistory />
-        <SectionTitle title="대표 연혁" />
-        <CEOHistory />
+        <section>
+          <SectionTitle title="회사 연혁" />
+          <CompanyHistory />
+          <SectionTitle title="대표 연혁" />
+          <CEOHistory />
+        </section>
       </main>
     </Layout>
   );

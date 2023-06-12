@@ -14,8 +14,7 @@ export default function Customer() {
       <main className={`${styles.customer} inner`}>
         <section>
           <p className={styles.description}>
-            아래의 내용을 작성해주시면 3일 내에 전화 또는 이메일로
-            답변드리겠습니다.
+            연락처와 함께 문의를 남겨주세요. 영업일 기준 3일 내에 답변 드리겠습니다.
           </p>
           <form>
             <div className={styles.input_box}>
@@ -23,11 +22,11 @@ export default function Customer() {
                 <span>*</span>문의유형
               </label>
               <select className={styles.type} name="type" id="type">
+                <option value="">문의 유형을 선택해주세요</option>
+                <option value="컨설팅">견적요청</option>
                 <option value="제품">제품</option>
-                <option value="컨설팅">컨설팅</option>
                 <option value="MSP">MSP</option>
-                <option value="컨설팅">견적서</option>
-                <option value="컨설팅">A/S</option>
+                <option value="컨설팅">컨설팅</option>
                 <option value="채용">채용</option>
                 <option value="기타">기타</option>
               </select>
@@ -36,25 +35,25 @@ export default function Customer() {
               <label htmlFor="company">
                 <span>*</span>회사명
               </label>
-              <input type="text" name="company" id="company" required />
+              <input type="text" name="company" id="company" required placeholder="회사명을 입력하세요"/>
             </div>
             <div className={styles.input_box}>
               <label htmlFor="pic">
                 <span>*</span>담당자명
               </label>
-              <input type="text" name="pic" id="pic" required />
+              <input type="text" name="pic" id="pic" required placeholder="예) 홍길동"/>
             </div>
             <div className={styles.input_box}>
               <label htmlFor="phone">
                 <span>*</span>연락처
               </label>
-              <input type="tel" name="phone" id="phone" required />
+              <input type="tel" name="phone" id="phone" required placeholder="예) 010-0000-0000"/>
             </div>
             <div className={styles.input_box}>
               <label htmlFor="email">
                 <span>*</span>이메일
               </label>
-              <input type="email" name="email" id="email" required />
+              <input type="email" name="email" id="email" required placeholder="이메일 주소를 입력하세요"/>
             </div>
             <div className={styles.input_box}>
               <label htmlFor="contents">
@@ -66,6 +65,7 @@ export default function Customer() {
                 cols="30"
                 rows="6"
                 required
+                placeholder="문의내용을 입력하세요"
               ></textarea>
             </div>
             <div className={styles.agree_box}>
@@ -102,7 +102,7 @@ export default function Customer() {
               </div>
             </div>
             <div className={styles.button_box}>
-              <input type="submit" value="문의 등록하기" />
+              <input type="submit" value="제출" />
             </div>
           </form>
         </section>

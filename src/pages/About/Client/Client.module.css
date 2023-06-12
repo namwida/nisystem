@@ -1,5 +1,5 @@
 .about_client {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .about_client h3 {
   padding-bottom: 18px;
@@ -15,9 +15,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 23%;
-  border: 1px solid #eee;
+  width: 22%;
+  border: 1px solid #d2d7e1;
+  box-shadow: 0 4px 4px rgba(131, 145, 161, 0.16);
   background-color: #fff;
+  border-radius: 8px;
 }
 .about_client dt {
   order: 1;
@@ -26,13 +28,15 @@
   justify-content: center;
   gap: 8px;
   width: 100%;
-  height: 50px;
+  height: 42px;
   line-height: 50px;
-  background-color: #eee;
+  background-color: #f7fafd;
   color: #333;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   text-align: center;
+  border-top: 1px solid #d2d7e1;
+  border-radius: 0 0 8px 8px;
 }
 .about_client dt img {
   width: 24px;

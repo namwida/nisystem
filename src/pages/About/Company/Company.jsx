@@ -1,5 +1,10 @@
 import { AiOutlineSafety, AiTwotoneIdcard } from "react-icons/ai";
-import { BsAward, BsGlobeAmericas, BsHandThumbsUp, BsHexagonHalf } from "react-icons/bs";
+import {
+  BsAward,
+  BsGlobeAmericas,
+  BsHandThumbsUp,
+  BsHexagonHalf,
+} from "react-icons/bs";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
@@ -50,22 +55,6 @@ function OutlineSection() {
             </td>
           </tr>
         </table>
-        {/* <p>
-          ㈜엔아이시스템의 홈페이지를 찾아주셔서 감사합니다. ㈜엔아이시스템은
-          2021년 12월에 설립하여 최고의 네트워크보안 기술력으로 보안시스템의
-          구축과 컨설팅을 제공하는 정보보안 전문기업 입니다. 2000년부터 방화벽,
-          침입탐지시스템으로 시작했던 베테랑을 비롯하여 10여년이상의 숙력된
-          인력이 네트워크보안의 핵심 운영노하우를 접목하여 국내외 00여개 기업에
-          정보보안 서비스를 제공하고 있습니다.
-        </p>
-        <p>
-          ‘행복한 기업문화’, ‘혁신적 사고’, ‘공정한 분배’를 바탕으로 고객과
-          직원의 가치를 최우선으로 생각하며, 모든 임직원은 열정과 신뢰를
-          바탕으로 최고의 서비스를 약속 드립니다. ‘행복한 기업문화’, ‘혁신적
-          사고’, ‘공정한 분배’를 바탕으로 고객과 직원의 가치를 최우선으로
-          생각하며, 모든 임직원은 열정과 신뢰를 바탕으로 최고의 서비스를 약속
-          드립니다.
-        </p> */}
       </section>
     </>
   );
@@ -77,32 +66,33 @@ function MissionAndVisionSection() {
       <SectionTitle title="미션 및 비전" />
       <section>
         <div className={styles.mission_box}>
-          <div className="inner">
-            <h3>미션</h3>
-            <p>
-              전문성있는 네트워크 기술로
-              <br /> 모두에게 가치있는 경험을 제공한다
-            </p>
-            <p>
-              With professional network technology
-              <br /> provide a valuable experience for everyone
-            </p>
+          <div className={`${styles.inner} inner`}>
+            <div className={styles.mission}>
+              <h3>Mission</h3>
+              <p className={styles.destription_ko}>
+                전문성있는 네트워크 기술로<br/> 모두에게 가치있는 경험을 제공
+              </p>
+              <p className={styles.destription_en}>
+                With professional network technology provide<br/> a valuable
+                experience for everyone
+              </p>
+            </div>
+            <div className={styles.vision}>
+              <h3>Vision</h3>
+              <p className={styles.destription_ko}>
+                누구나 함께 일하고 싶어하는<br/> 최고의 네트워크 기업
+              </p>
+              <p className={styles.destription_en}>
+                The best network company<br/> anyone wants to work with
+              </p>
+            </div>
           </div>
         </div>
         <div className={`${styles.vision_box} inner`}>
-          <h3>비전</h3>
-          <p className={styles.destription_ko}>
-            누구나 함께 일하고 싶어하는
-            <br /> 최고의 네트워크 기업
-          </p>
-          <p className={styles.destription_en}>
-            The best network company
-            <br /> anyone wants to work with
-          </p>
-          <ul className={styles.item_list}>
+          {/* <ul className={styles.item_list}>
             <li>
               <div className={styles.vision_image_box}>
-                <BsAward size="70"/>
+                <BsAward size="70" />
               </div>
               <div className={styles.vision_test_box}>
                 <p>전문성</p>
@@ -127,7 +117,7 @@ function MissionAndVisionSection() {
                 <p>핵심 분야에서 최고 수준의 전문가로 성장한다.</p>
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </section>
     </>
