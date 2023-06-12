@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nisystem/static/css/main.fdeaaaee.css",
-    "main.js": "/nisystem/static/js/main.13160e7a.js",
+    "main.css": "/nisystem/static/css/main.208beeef.css",
+    "main.js": "/nisystem/static/js/main.ef7603d1.js",
     "static/js/787.d4c15b7a.chunk.js": "/nisystem/static/js/787.d4c15b7a.chunk.js",
-    "static/media/main_banner.svg": "/nisystem/static/media/main_banner.06ef7a7ab765441f7dfe.svg",
-    "static/media/about.png": "/nisystem/static/media/about.9c2ba54178309132f906.png",
+    "static/media/header_business6.svg": "/nisystem/static/media/header_business6.68e73b005573e69d1208.svg",
     "static/media/benefit_1.jpg": "/nisystem/static/media/benefit_1.9b2d4083136726d28f08.jpg",
-    "static/media/employment_2.png": "/nisystem/static/media/employment_2.f9b78b3b134698260744.png",
-    "static/media/customer_2.png": "/nisystem/static/media/customer_2.65d38bd3a6163d3bdfc1.png",
-    "static/media/business_3.png": "/nisystem/static/media/business_3.ba2d43ec2349b929056e.png",
+    "static/media/header_employment4.svg": "/nisystem/static/media/header_employment4.521166dbcb25be78b6d2.svg",
     "static/media/employment_2.jpg": "/nisystem/static/media/employment_2.290e332a15e54fb46560.jpg",
+    "static/media/header_company2.svg": "/nisystem/static/media/header_company2.3333c3bf0dfa9a478ba6.svg",
     "static/media/benefit_3.jpg": "/nisystem/static/media/benefit_3.0df0d79788b2842b2d00.jpg",
     "static/media/benefit_4.jpg": "/nisystem/static/media/benefit_4.386bdfaa8c847de359df.jpg",
+    "static/media/header_customer3.svg": "/nisystem/static/media/header_customer3.8106d133e19561131fc4.svg",
     "static/media/main_company.jpg": "/nisystem/static/media/main_company.fda69e1d09f9906f2806.jpg",
+    "static/media/main_banner2.svg": "/nisystem/static/media/main_banner2.bb6995cefbcf262aec37.svg",
     "static/media/idc.png": "/nisystem/static/media/idc.a8cf1d63567b5d39a541.png",
     "static/media/network.png": "/nisystem/static/media/network.ec39f5a95c1112351363.png",
     "static/media/msp_2.png": "/nisystem/static/media/msp_2.de431e194f7ab4726073.png",
@@ -21,13 +21,20 @@
     "static/media/benefti_2.jpg": "/nisystem/static/media/benefti_2.c2628f8fe44ceeabc0fa.jpg",
     "static/media/msp_1.png": "/nisystem/static/media/msp_1.9ad8accc4c792a04805e.png",
     "static/media/msp_4.png": "/nisystem/static/media/msp_4.cdf791dab4d1bb97e999.png",
+    "static/media/main_business_42.svg": "/nisystem/static/media/main_business_42.cf51c8d88a7e98d4cdec.svg",
+    "static/media/main_business_32.svg": "/nisystem/static/media/main_business_32.d1b70c7bf15f208a8fcc.svg",
+    "static/media/main_business_1.svg": "/nisystem/static/media/main_business_1.83508612e15122dcfef2.svg",
+    "static/media/main_business_4.svg": "/nisystem/static/media/main_business_4.6372890ea25955c953c5.svg",
+    "static/media/main_customer1_2.svg": "/nisystem/static/media/main_customer1_2.6ee11e2cde9a8a8eecd5.svg",
+    "static/media/main_customer2_1.svg": "/nisystem/static/media/main_customer2_1.22f28059ae4cdeafb4ee.svg",
+    "static/media/main_customer3_3.svg": "/nisystem/static/media/main_customer3_3.a95b2b0723df66d831b8.svg",
     "index.html": "/nisystem/index.html",
-    "main.fdeaaaee.css.map": "/nisystem/static/css/main.fdeaaaee.css.map",
-    "main.13160e7a.js.map": "/nisystem/static/js/main.13160e7a.js.map",
+    "main.208beeef.css.map": "/nisystem/static/css/main.208beeef.css.map",
+    "main.ef7603d1.js.map": "/nisystem/static/js/main.ef7603d1.js.map",
     "787.d4c15b7a.chunk.js.map": "/nisystem/static/js/787.d4c15b7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdeaaaee.css",
-    "static/js/main.13160e7a.js"
+    "static/css/main.208beeef.css",
+    "static/js/main.ef7603d1.js"
   ]
 }
