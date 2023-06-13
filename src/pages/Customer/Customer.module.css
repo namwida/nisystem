@@ -52,7 +52,7 @@ textarea {
   position: relative;
   bottom: -3px;
   margin-right: 4px;
-  color: #0b5b96;
+  color: #0070d2;
 }
 .customer textarea {
   padding: 20px;
@@ -65,6 +65,7 @@ textarea {
   margin-top: 18px;
   padding: 30px;
   background-color: #fff;
+  border-radius: 4px;
 }
 .customer .agree_box dl:not(:last-of-type) {
   margin-bottom: 24px;
@@ -88,6 +89,7 @@ textarea {
   cursor: pointer;
 }
 .customer .button_box {
+  position: relative;
   margin-top: 40px;
 }
 .customer .button_box input {
@@ -101,4 +103,20 @@ textarea {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+}
+.loading_msg {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #0070d2;
+}
+.error_msg {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #e52f2f;
 }

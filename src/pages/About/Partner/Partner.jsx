@@ -17,7 +17,7 @@ export default function Partner() {
         <SectionTitle title="벤더사" />
         <Vendor />
         <SectionTitle title="협력사" />
-        <Client />
+        <Company />
       </main>
     </Layout>
   );
@@ -102,126 +102,61 @@ function Vendor() {
   );
 }
 
-function Client() {
+function Company() {
   return (
     <section className="inner">
       <dl>
         <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/china.svg`}
-            alt="중국 국기"
-          />
-          <p>서진 심천</p>
+          <p>씨브이원</p>
         </dt>
         <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
-            alt="서진 심천 로고"
+            src={`${process.env.PUBLIC_URL}/images/about/about_message_partner1.png`}
+            alt="씨브이원 로고"
           />
         </dd>
       </dl>
       <dl>
         <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
-            alt="베트남 국기"
-          />
-          <p>서진 오토</p>
+          <p>콘텐츠브릿지</p>
         </dt>
         <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
-            alt="서진 오토 로고"
+            src={`${process.env.PUBLIC_URL}/images/about/about_message_partner2.png`}
+            alt="콘텐츠브릿지 로고"
           />
         </dd>
       </dl>
       <dl>
         <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
-            alt="베트남 국기"
-          />
-          <p>서진시스템 비나</p>
+          <p>누라인프라</p>
         </dt>
         <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
-            alt="서진시스템 비나 로고"
+            src={`${process.env.PUBLIC_URL}/images/about/about_message_partner5.png`}
+            alt="누라인프라 로고"
           />
         </dd>
       </dl>
       <dl>
         <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
-            alt="베트남 국기"
-          />
-          <p>서진 비나</p>
+          <p>파이오링크</p>
         </dt>
         <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_01.svg`}
-            alt="서진 비나 로고"
+            src={`${process.env.PUBLIC_URL}/images/about/about_message_partner4.png`}
+            alt="파이오링크 로고"
           />
         </dd>
       </dl>
       <dl>
         <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
-            alt="베트남 국기"
-          />
-          <p>텍슨 베트남</p>
+          <p>JS정보시스템</p>
         </dt>
         <dd>
           <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
-            alt="텍슨 베트남 로고"
-          />
-        </dd>
-      </dl>
-      <dl>
-        <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/usa.svg`}
-            alt="미국 국기"
-          />
-          <p>텍슨 USA</p>
-        </dt>
-        <dd>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
-            alt="텍슨 USA 로고"
-          />
-        </dd>
-      </dl>
-      <dl>
-        <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/vietnam.svg`}
-            alt="베트남 국기"
-          />
-          <p>텍슨 비나</p>
-        </dt>
-        <dd>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
-            alt="텍슨 비나 로고"
-          />
-        </dd>
-      </dl>
-      <dl>
-        <dt>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/china.svg`}
-            alt="중국 국기"
-          />
-          <p>텍슨 차이나</p>
-        </dt>
-        <dd>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/partner_logo_02.svg`}
-            alt="텍슨 차이나 로고"
+            src={`${process.env.PUBLIC_URL}/images/about/about_message_partner3.png`}
+            alt="JS정보시스템 로고"
           />
         </dd>
       </dl>

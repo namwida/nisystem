@@ -1,8 +1,59 @@
+import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import styles from "./Customer.module.css";
+import axios from "axios";
+import ScrollToTop from "../../ScrollToTop";
 
 export default function Customer() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [value, setValue] = useState({
+    type: "",
+    companyName: "",
+    personName: "",
+    phone: "",
+    email: "",
+    content: "",
+  });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("서브밋 성공");
+    setIsLoading(true);
+
+    let form = new FormData();
+    form.append("문의유형", value.type);
+    form.append("회사명", value.companyName);
+    form.append("담당자명", value.personName);
+    form.append("연락처", value.phone);
+    form.append("이메일", value.email);
+    form.append("문의내용", value.content);
+
+    axios
+      .post(
+        "https://script.google.com/macros/s/AKfycbw7nBnwvHVWh4xwnNceu4rISEcCC-kwnmjF2g3YgjfajQBVLrn3WMcmxe_OHVl1ujRG/exec",
+        form
+      )
+      .then((res) => {
+        console.log("성공");
+        window.alert("문의 내용이 제출되었습니다. 감사합니다.");
+        window.location.reload();
+        window.scrollTo(0, 0);
+      })
+      .catch((error) => {
+        console.log("실패");
+        setIsError(true);
+      })
+      .finally(() => setIsLoading(false));
+  };
+
+  const onChange = (e) => {
+    setValue({
+      ...value,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <Layout>
       <PageHeader
@@ -14,15 +65,25 @@ export default function Customer() {
       <main className={`${styles.customer} inner`}>
         <section>
           <p className={styles.description}>
-            연락처와 함께 문의를 남겨주세요. 영업일 기준 3일 내에 답변 드리겠습니다.
+            연락처와 함께 문의를 남겨주세요. 영업일 기준 3일 내에 답변
+            드리겠습니다.
           </p>
-          <form>
+          <form onSubmit={onSubmit}>
             <div className={styles.input_box}>
               <label htmlFor="type">
                 <span>*</span>문의유형
               </label>
-              <select className={styles.type} name="type" id="type">
-                <option value="">문의 유형을 선택해주세요</option>
+              <select
+                className={styles.type}
+                name="type"
+                id="type"
+                required
+                value={value.type}
+                onChange={onChange}
+              >
+                <option value="" disabled selected>
+                  문의 유형을 선택해주세요
+                </option>
                 <option value="컨설팅">견적요청</option>
                 <option value="제품">제품</option>
                 <option value="MSP">MSP</option>
@@ -32,40 +93,74 @@ export default function Customer() {
               </select>
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="company">
+              <label htmlFor="companyName">
                 <span>*</span>회사명
               </label>
-              <input type="text" name="company" id="company" required placeholder="회사명을 입력하세요"/>
+              <input
+                type="text"
+                name="companyName"
+                id="companyName"
+                required
+                placeholder="회사명을 입력하세요"
+                value={value.companyName}
+                onChange={onChange}
+              />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="pic">
+              <label htmlFor="personName">
                 <span>*</span>담당자명
               </label>
-              <input type="text" name="pic" id="pic" required placeholder="예) 홍길동"/>
+              <input
+                type="text"
+                name="personName"
+                id="personName"
+                required
+                placeholder="예) 홍길동"
+                value={value.personName}
+                onChange={onChange}
+              />
             </div>
             <div className={styles.input_box}>
               <label htmlFor="phone">
                 <span>*</span>연락처
               </label>
-              <input type="tel" name="phone" id="phone" required placeholder="예) 010-0000-0000"/>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                placeholder="예) 010-0000-0000"
+                value={value.phone}
+                onChange={onChange}
+              />
             </div>
             <div className={styles.input_box}>
               <label htmlFor="email">
                 <span>*</span>이메일
               </label>
-              <input type="email" name="email" id="email" required placeholder="이메일 주소를 입력하세요"/>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="이메일 주소를 입력하세요"
+                value={value.email}
+                onChange={onChange}
+              />
             </div>
             <div className={styles.input_box}>
-              <label htmlFor="contents">
+              <label htmlFor="content">
                 <span>*</span>문의 내용
               </label>
               <textarea
-                name="contents"
-                id="contents"
+                name="content"
+                id="content"
                 cols="30"
                 rows="6"
                 required
                 placeholder="문의내용을 입력하세요"
+                value={value.content}
+                onChange={onChange}
               ></textarea>
             </div>
             <div className={styles.agree_box}>
@@ -102,6 +197,16 @@ export default function Customer() {
               </div>
             </div>
             <div className={styles.button_box}>
+              {isLoading && (
+                <p className={styles.loading_msg}>
+                  제출중입니다. 잠시만 기다려주세요.
+                </p>
+              )}
+              {isError && (
+                <p className={styles.error_msg}>
+                  제출에 실패하였습니다. 다시 시도해주세요.
+                </p>
+              )}
               <input type="submit" value="제출" />
             </div>
           </form>

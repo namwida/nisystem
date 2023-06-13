@@ -116,12 +116,12 @@ function Benefit() {
       <dl>
         <dt>보상/수당/지원</dt>
         <dd className={styles.benefit_image}></dd>
-        <dd>퇴직금, 인센티브제, 성과급, 교육비 지원</dd>
+        <dd>퇴직금, 성과급, 교육비 지원</dd>
       </dl>
       <dl>
         <dt>생활편의</dt>
         <dd className={styles.benefit_image}></dd>
-        <dd>건강검진, 석식제공, 식비지급</dd>
+        <dd>건강검진, 석식제공</dd>
       </dl>
     </section>
   );
