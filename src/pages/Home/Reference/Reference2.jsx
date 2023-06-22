@@ -19,9 +19,8 @@ export default function Reference2() {
                 height="1em"
                 aria-hidden="true"
                 focusable="false"
-                class=""
               >
-                <g clip-rule="evenodd" fill-rule="evenodd">
+                <g clipRule="evenodd" fillRule="evenodd">
                   <path d="m19.7273 12-6.3637-6.3636 1.2728-1.2728 7.6364 7.6364-7.6364 7.6364-1.2728-1.2728z"></path>
                   <path d="m20 12.9h-18v-1.8h18z"></path>
                 </g>

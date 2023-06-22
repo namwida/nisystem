@@ -32,28 +32,30 @@ function OutlineSection() {
       <SectionTitle title="개요" />
       <section className={`${styles.outline_section} inner`}>
         <table>
-          <tr>
-            <th>회사명</th>
-            <td>㈜엔아이시스템</td>
-          </tr>
-          <tr>
-            <th>사업분야</th>
-            <td>네트워크보안 시스템 구축 및 운용 유지</td>
-          </tr>
-          <tr>
-            <th>설립일</th>
-            <td>2021년 12월</td>
-          </tr>
-          <tr>
-            <th>대표전화</th>
-            <td>1666-2869</td>
-          </tr>
-          <tr>
-            <th>주소</th>
-            <td>
-              경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>회사명</th>
+              <td>㈜엔아이시스템</td>
+            </tr>
+            <tr>
+              <th>사업분야</th>
+              <td>네트워크보안 시스템 구축 및 운용 유지</td>
+            </tr>
+            <tr>
+              <th>설립일</th>
+              <td>2021년 12월</td>
+            </tr>
+            <tr>
+              <th>대표전화</th>
+              <td>1666-2869</td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td>
+                경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </>
@@ -70,20 +72,23 @@ function MissionAndVisionSection() {
             <div className={styles.mission}>
               <h3>Mission</h3>
               <p className={styles.destription_ko}>
-                전문성있는 네트워크 기술로<br/> 모두에게 가치있는 경험을 제공
+                전문성있는 네트워크 기술로
+                <br /> 모두에게 가치있는 경험을 제공
               </p>
               <p className={styles.destription_en}>
-                With professional network technology provide<br/> a valuable
-                experience for everyone
+                With professional network technology provide
+                <br /> a valuable experience for everyone
               </p>
             </div>
             <div className={styles.vision}>
               <h3>Vision</h3>
               <p className={styles.destription_ko}>
-                누구나 함께 일하고 싶어하는<br/> 최고의 네트워크 기업
+                누구나 함께 일하고 싶어하는
+                <br /> 최고의 네트워크 기업
               </p>
               <p className={styles.destription_en}>
-                The best network company<br/> anyone wants to work with
+                The best network company
+                <br /> anyone wants to work with
               </p>
             </div>
           </div>

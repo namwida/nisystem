@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const pathname = useLocation().pathname;
   console.log("pathname", pathname);
-  console.log(pathname.includes("about"));
+
   const [hamToggle, setHamToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState({
     company: false,
@@ -43,7 +43,7 @@ export default function Header() {
           </div>
           <div className={styles.list_1dep}>
             <NavLink
-              to="/about"
+              to="/about/company"
               className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               회사소개
@@ -59,7 +59,7 @@ export default function Header() {
           </div>
           <div className={styles.list_1dep}>
             <NavLink
-              to="/business"
+              to="/business/firewall/fortinet"
               className={({ isActive }) => (isActive ? "gnb_selected" : "")}
             >
               사업소개
@@ -116,71 +116,83 @@ export default function Header() {
             </Link>
             <ul>
               <li>
-                <a
-                  href="/nisystem/about/company"
+                <Link
+                  to="/about/company"
                   className={
-                    pathname.includes("/about/company") ? styles.path_active : ""
+                    pathname.includes("/about/company")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   엔아이시스템 소개
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/about/message"
+                <Link
+                  to="/about/message"
                   className={
-                    pathname.includes("/about/message") ? styles.path_active : ""
+                    pathname.includes("/about/message")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   인사말
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/about/history"
+                <Link
+                  to="/about/history"
                   className={
-                    pathname.includes("/about/history") ? styles.path_active : ""
+                    pathname.includes("/about/history")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   연혁
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/about/client"
+                <Link
+                  to="/about/client"
                   className={
                     pathname.includes("/about/client") ? styles.path_active : ""
                   }
                 >
                   고객사
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/about/partner"
+                <Link
+                  to="/about/partner"
                   className={
-                    pathname.includes("/about/partner") ? styles.path_active : ""
+                    pathname.includes("/about/partner")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   벤더사/협력사
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/about/location"
+                <Link
+                  to="/about/location"
                   className={
-                    pathname.includes("/about/location") ? styles.path_active : ""
+                    pathname.includes("/about/location")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   찾아오시는 길
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
           <li className={menuToggle.business ? styles.munu_active : ""}>
             <Link
               to="#"
-              className={pathname.includes("/business") ? styles.path_active : ""}
+              className={
+                pathname.includes("/business") ? styles.path_active : ""
+              }
               onClick={() => clickedMenuToggle("business")}
             >
               사업소개
@@ -188,58 +200,62 @@ export default function Header() {
             </Link>
             <ul>
               <li>
-                <a
-                  href="/nisystem/business/firewall/fortinet"
+                <Link
+                  to="/business/firewall/fortinet"
                   className={
-                    pathname.includes("/business/firewall") ? styles.path_active : ""
+                    pathname.includes("/business/firewall")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   Firewall
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/business/switch/cisco"
+                <Link
+                  to="/business/switch/cisco"
                   className={
-                    pathname.includes("/business/switch") ? styles.path_active : ""
+                    pathname.includes("/business/switch")
+                      ? styles.path_active
+                      : ""
                   }
                 >
                   Switch
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/business/ap/cisco"
+                <Link
+                  to="/business/ap/cisco"
                   className={
                     pathname.includes("/business/ap") ? styles.path_active : ""
                   }
                 >
                   AP
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/business/est/asm"
+                <Link
+                  to="/business/est/asm"
                   className={
                     pathname.includes("/business/est") ? styles.path_active : ""
                   }
                 >
                   EST Security
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/business/msp"
+                <Link
+                  to="/business/msp"
                   className={
                     pathname.includes("/business/msp") ? styles.path_active : ""
                   }
                 >
                   MSP
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/nisystem/business/consulting"
+                <Link
+                  to="/business/consulting"
                   className={
                     pathname.includes("/business/consulting")
                       ? styles.path_active
@@ -247,15 +263,15 @@ export default function Header() {
                   }
                 >
                   Consulting
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/nisystem/customer">고객문의</a>
+            <Link to="/customer">고객문의</Link>
           </li>
           <li>
-            <a href="/nisystem/employment">채용</a>
+            <Link to="/employment">채용</Link>
           </li>
         </ul>
       </div>

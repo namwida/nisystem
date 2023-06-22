@@ -78,7 +78,7 @@ export default function Customer() {
                 value={value.type}
                 onChange={onChange}
               >
-                <option value="" disabled selected>
+                <option value="" disabled defaultValue="문의 유형을 선택해주세요">
                   문의 유형을 선택해주세요
                 </option>
                 <option value="컨설팅">견적요청</option>
@@ -196,12 +196,12 @@ export default function Customer() {
             <div className={styles.button_box}>
               {isLoading && (
                 <p className={styles.loading_msg}>
-                  제출중입니다. 잠시만 기다려주세요.
+                  제출중입니다.
                 </p>
               )}
               {isError && (
                 <p className={styles.error_msg}>
-                  제출에 실패하였습니다. 다시 시도해주세요.
+                  제출에 실패하였습니다.
                 </p>
               )}
               <input type="submit" value="제출" />

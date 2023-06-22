@@ -23,7 +23,7 @@ export default function HomeCompany() {
             <path
               d="M32.5 2L39 8.5L32.5 15"
               stroke="#fff"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             />
             <path d="M39 8.5H0" stroke="#fff" />
           </svg>
