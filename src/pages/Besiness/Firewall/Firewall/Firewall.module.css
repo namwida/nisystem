@@ -1,6 +1,8 @@
 .topmenu_list a.active {
   font-size: 24px;
-  color: #349ce8;
-  border: 1px solid #349ce8;
+  color: #0070d2;
+  border: 1px solid #0070d2;
+  /* color: #349ce8;
+  border: 1px solid #349ce8; */
   font-weight: bold;
 }

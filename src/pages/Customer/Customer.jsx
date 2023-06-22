@@ -3,12 +3,10 @@ import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import styles from "./Customer.module.css";
 import axios from "axios";
-import ScrollToTop from "../../ScrollToTop";
 
 export default function Customer() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [value, setValue] = useState({
     type: "",
     companyName: "",
@@ -59,8 +57,7 @@ export default function Customer() {
       <PageHeader
         gnbname="customer"
         title="고객문의"
-        destription="엔아이시스템은 고객님의 말씀에 귀를 기울이며."
-        destription_add="언제나 편안한 서비스를 제공하기 위하여 최선을 다하겠습니다."
+        destription="엔아이시스템은 고객님의 말씀에 귀를 기울이며 언제나 편안한 서비스를 제공하기 위하여 최선을 다하겠습니다."
       />
       <main className={`${styles.customer} inner`}>
         <section>
@@ -167,7 +164,7 @@ export default function Customer() {
               <label>
                 <span>*</span>개인정보 수집 및 이용에 동의
               </label>
-              <div>
+              <div className={styles.discription}>
                 <dl>
                   <dt>개인정보 수집 항목</dt>
                   <dd>회사명, 담당자명, 연락처, 이메일</dd>

@@ -1,5 +1,5 @@
 .about_company {
-  padding-top: 60px;
+  padding-top: var(--main-top);
   width: 100%;
 }
 .outline_section {
@@ -20,15 +20,15 @@
 }
 .outline_section table th {
   width: 200px;
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: bold;
   text-align: center;
 }
 .outline_section table td {
-  font-size: 18px;
+  font-size: var(--font-size--9);
 }
 .outline_section p {
-  font-size: 16px;
+  font-size: var(--font-size--10);
 }
 .outline_section p:first-of-type {
   margin: 30px 0;
@@ -46,28 +46,48 @@
   padding: 50px;
   width: 50%;
   height: 270px;
-  border-radius: 8px;
+  border-radius: var( --br-3);
   border: 1px solid #eee;
   box-shadow: 4px 4px 4px 4px #eee;
   background-color: rgb(247, 247, 247);
 }
-.mission_box h3::after {
-  background-color: #fff;
-}
-.mission_box h3{
+.mission_box h3 {
   position: relative;
   display: inline-block;
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: var(--font-size--9);
   font-weight: 600;
   color: #0070d2;
 }
+.mission_box h3::after {
+  background-color: #fff;
+}
 .mission_box .destription_ko {
   margin-bottom: 8px;
-  font-size: 24px;
+  font-size: var(--font-size--7);
   font-weight: bold;
+  word-break: keep-all;
 }
 .mission_box .destription_en {
-  font-size: 16px;
+  font-size: var(--font-size--10);
   color: #a1a4aa;
+}
+@media screen and (max-width: 767px) {
+  .outline_section table tr {
+    height: auto;
+  }
+  .outline_section table th {
+    width: 90px;
+  }
+  .outline_section table td {
+    padding: 12px 0 12px;
+  }
+  .mission_box .inner {
+    flex-direction: column;
+  }
+  .mission_box .inner > div {
+    padding: 30px 20px;
+    width: 100%;
+    height: auto;
+  }
 }

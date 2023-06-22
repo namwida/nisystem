@@ -1,17 +1,18 @@
 .about_location {
-  padding-top: 80px;
+  padding-top: var(--main-top);
 }
 .about_location .text_box {
-margin-bottom: 30px;
+  margin-bottom: var(--section-bottom);
 }
 .about_location dl {
   display: flex;
+  word-break: keep-all;
 }
 .about_location dt {
   position: relative;
   padding-left: 12px;
   width: 100px;
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: bold;
   line-height: 1.7;
 }
@@ -27,7 +28,7 @@ margin-bottom: 30px;
   background-color: #0079cc;
 }
 .about_location dd {
-  font-size: 15px;
+  font-size: var(--font-size--11);
   color: #555;
 }
 /* 지도 */
@@ -38,4 +39,20 @@ margin-bottom: 30px;
 .map_image img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .about_location .text_box {
+    margin-bottom: 15px;
+  }
+  .about_location dl {
+    padding-bottom: 4px;
+    align-items: flex-start;
+  }
+  .about_location dt {
+    width: 70px;
+  }
+  .about_location dd {
+    flex: 1;
+    line-height: 1.7;
+  }
 }

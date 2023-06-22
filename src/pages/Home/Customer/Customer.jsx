@@ -26,7 +26,7 @@ export default function Customer() {
           </div>
           <div>
             <p>컨설팅</p>
-            <p>고객님의 회사에 최적화된 제품 및 솔루션을 제공합니다.</p>
+            <p>최적화된 제품 및 솔루션을 제공합니다.</p>
             <div className={styles.image}></div>
           </div>
         </div>

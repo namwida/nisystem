@@ -4,13 +4,13 @@
   height: 420px;
   background-image: url(/public/images/main/main_banner2.svg);
   background-size: cover;
-  background-position: center;
+  background-position: 35%;
   background-repeat: no-repeat;
 }
 .home_banner p:nth-child(1) {
   padding-top: 100px;
   padding-left: 60px;
-  font-size: 80px;
+  font-size: var(--font-size--1);
   font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
@@ -20,4 +20,13 @@
   margin-top: 50px;
   font-size: 20px;
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .home_banner {
+    height: 280px;
+  }
+  .home_banner p:nth-child(1) {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
 }

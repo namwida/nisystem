@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Layout from "../../../components/Layout/Layout";
 import PageHeader from "../../../components/PageHeader/PageHeader";
-import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import styles from "./Location.module.css";
 
 const { kakao } = window;

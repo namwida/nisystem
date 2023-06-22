@@ -1,9 +1,6 @@
 .about_history {
   overflow: hidden;
-  padding-top: 80px;
-}
-.year_area:first-of-type {
-  /* margin-bottom: 40px; */
+  padding-top: var(--main-top);
 }
 .year_area li {
   position: relative;
@@ -23,7 +20,7 @@
   position: relative;
   margin-left: 350px;
   width: 180px;
-  font-size: 32px;
+  font-size: var(--font-size--5);
   font-weight: bold;
 }
 .year_area .year.first::before {
@@ -72,7 +69,7 @@
 .year_area .month dt {
   position: relative;
   white-space: nowrap;
-  font-size: 18px;
+  font-size: var(--font-size--9);
   font-weight: 600;
 }
 .year_area .month dt::before {
@@ -91,17 +88,76 @@
   position: relative;
   padding-left: 8px;
   margin-bottom: 6px;
-  font-size: 16px;
+  font-size: var(--font-size--10);
 }
 .year_area .month dd::before {
   position: absolute;
   left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 11px;
   display: block;
   content: "";
   width: 2px;
   height: 2px;
   border-radius: 50%;
   background-color: #666;
+}
+@media screen and (max-width: 1100px) {
+  .year_area li::after {
+    left: 270px;
+  }
+  .year_area .year {
+    margin-left: 120px;
+    width: 150px;
+  }
+  .year_area .year::after {
+    left: 144.5px;
+  }
+  .year_area .month {
+    margin-left: 270px;
+    width: auto;
+  }
+  .year_area .month dt::before {
+    top: 8px;
+  }
+  .year_area .month dd {
+    width: 100%;
+  }
+  .year_area .month.last::before {
+    top: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about_history ul {
+    /* border: 1px solid red; */
+  }
+  .year_area li::after {
+    left: 101px;
+  }
+  .year_area .year {
+    margin-left: 20px;
+    width: 81px;
+  }
+  .year_area .year::after {
+    left: 74.5px;
+  }
+  .year_area .month {
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 101px;
+    padding-left: 20px;
+    width: auto;
+  }
+  .year_area .month dt::before {
+    left: -24.5px;
+  }
+  .year_area .month dd {
+    padding-left: 16px;
+    width: 100%;
+  }
+  .year_area .month dd::before {
+    left: 8px;
+  }
+  .year_area .month.last::before {
+    height: 190px;
+  }
 }

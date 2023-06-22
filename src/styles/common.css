@@ -1,11 +1,17 @@
+@import "./font.css";
+
+html,
+body {
+  font-family: "Pretendard", sans-serif;
+}
 * {
   color: #333;
   line-height: 1.4;
   box-sizing: border-box;
 }
-a.gnb_selected {
+.gnb_selected {
   font-weight: bold;
-  color: #333;
+  color: var(--color--blue-1) !important;
 }
 .inner {
   margin: 0 auto;
@@ -25,27 +31,45 @@ dd:hover {
 }
 /* 헤더 배경이미지 */
 .about {
-  border-radius: 4px;
   width: 100%;
   height: 100%;
   background: url(/public/images/header/header_company2.svg) no-repeat center;
   background-size: cover;
+  background-position: 30%;
 }
 .business {
   width: 100%;
   height: 100%;
   background: url(/public/images/header/header_business6.svg) no-repeat center;
   background-size: cover;
+  background-position: 30%;
+
 }
 .customer {
   width: 100%;
   height: 100%;
   background: url(/public/images/header/header_customer3.svg) no-repeat center;
-  background-size: cover;
+  background-position: 30%;
 }
 .employment {
   width: 100%;
   height: 100%;
   background: url(/public/images/header/header_employment4.svg) no-repeat center;
-  background-size: cover;
+  background-position: 30%;
+}
+/* 크로스 브라우징 */
+/* cross-browsing.css */
+input:not([type="checkbox"], [type="radio"]),
+textarea {
+  box-shadow: none;
+  cursor: auto;
+  /* ios 안쪽 그림자 삭제 */
+  -webkit-appearance: none;
+}
+input[type="button"],
+input[type="submit"] {
+  /* 버튼모양 os 상관없이 동일하게 */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }

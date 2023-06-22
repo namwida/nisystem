@@ -1,5 +1,5 @@
 .customer {
-  padding-top: 60px;
+  padding-top: var(--main-top);
 }
 .customer section {
   max-width: 800px;
@@ -14,7 +14,7 @@
   margin-bottom: 36px;
   padding-bottom: 24px;
   color: #666;
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: 600;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -30,7 +30,7 @@ select {
 .customer .input_box input,
 select,
 textarea {
-  font-size: 16px;
+  font-size: var(--font-size--10);
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -45,7 +45,7 @@ textarea {
   background: #fff url(/public/images/select_arrow_ico.png) no-repeat 270px 50%;
 }
 .customer label:not([for="agree"]) {
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: bold;
 }
 .customer label:not([for="agree"]) span {
@@ -61,7 +61,8 @@ textarea {
 .customer .agree_box {
   margin-top: 38px;
 }
-.customer .agree_box > div:not(.checkbox_box) {
+.customer .agree_box .discription {
+  display: none;
   margin-top: 18px;
   padding: 30px;
   background-color: #fff;
@@ -71,21 +72,21 @@ textarea {
   margin-bottom: 24px;
 }
 .customer .agree_box dt {
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: bold;
 }
 .customer .agree_box dd {
-  font-size: 16px;
+  font-size: var(--font-size--10);
   color: #888;
 }
 .customer .checkbox_box {
-  margin-top: 18px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 .customer .checkbox_box label {
-  font-size: 15px;
+  font-size: var(--font-size--11);
   cursor: pointer;
 }
 .customer .button_box {
@@ -96,7 +97,7 @@ textarea {
   width: 100%;
   height: 42px;
   color: #fff;
-  font-size: 16px;
+  font-size: var(--font-size--10);
   font-weight: bold;
   background-color: #0070d2;
   border: none;
@@ -119,4 +120,33 @@ textarea {
   transform: translateX(-50%);
   text-align: center;
   color: #e52f2f;
+}
+@media screen and (max-width: 767px) {
+  .customer section {
+    padding: 30px 20px;
+  }
+  .customer select {
+    width: 100%;
+    background-position: 96% 50%;
+  }
+  .customer .description {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+  }
+  .customer form > div:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  .customer .agree_box {
+    margin-top: 28px;
+  }
+  .customer .agree_box > div:not(.checkbox_box) {
+    margin-top: 12px;
+    padding: 20px;
+  }
+  .customer .agree_box dl:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+  .customer .button_box {
+    margin-top: 30px;
+  }
 }

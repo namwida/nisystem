@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 0 70px;
+  padding: 50px 0;
   /* background-color: #000000; */
   background-color: #343a40;
 }
@@ -8,7 +8,7 @@
   gap: 20px;
 }
 .terms a {
-  font-size: 14px;
+  font-size: var(--font-size--12);
   font-weight: bold;
   color: #fff;
 }
@@ -22,7 +22,7 @@
 }
 .company_box li {
   position: relative;
-  font-size: 14px;
+  font-size: var(--font-size--12);
   color: #fff;
 }
 .company_box li:not(:last-of-type):after {
@@ -38,7 +38,14 @@
   opacity: 0.6;
 }
 .copyrite {
-  font-size: 13px;
+  font-size: var(--font-size--13);
   color: #fff;
   opacity: 0.6;
+}
+@media screen and (max-width: 767px) {
+  .company_box {
+    padding: 16px 0;
+    row-gap: 2px;
+  }
+    
 }

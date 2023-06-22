@@ -10,8 +10,7 @@ export default function Partner() {
       <PageHeader
         gnbname="about"
         title="벤더사/협력사"
-        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야에서"
-        destription_add="여러 기업들과 Partnership을 맺고 사업을 진행하고 있습니다."
+        destription="엔아이시스템은 신뢰와 약속을 바탕으로 다양한 분야의 기업들과 partnership을 맺고 있습니다."
       />
       <main className={styles.about_partner}>
         <SectionTitle title="벤더사" />

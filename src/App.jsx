@@ -1,6 +1,7 @@
 import "./App.css";
 import "./styles/common.css";
 import "./styles/reset.css";
+import "./styles/variable.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeMain from "./pages/Home/Main/Main";
 import AboutCompany from "./pages/About/Company/Company";

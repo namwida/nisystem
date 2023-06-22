@@ -39,7 +39,7 @@ export default function Reference2() {
             </div>
             <div className={styles.text_box}>
               <p>제주항공</p>
-              <p>어쩌고 저쩌고 네트워크 유지보수 계약 체결</p>
+              <p>AWS, Azure Multi-Cloud 구축, 연동 및 유지보수</p>
             </div>
           </li>
           <li>
@@ -50,8 +50,8 @@ export default function Reference2() {
               />
             </div>
             <div className={styles.text_box}>
-              <p>제주항공</p>
-              <p>어쩌고 저쩌고 네트워크 유지보수 계약 체결</p>
+              <p>이스타항공</p>
+              <p>AWS, Azure Multi-Cloud 구축, 연동 및 유지보수</p>
             </div>
           </li>
           <li>
@@ -62,8 +62,8 @@ export default function Reference2() {
               />
             </div>
             <div className={styles.text_box}>
-              <p>제주항공</p>
-              <p>어쩌고 저쩌고 네트워크 유지보수 계약 체결</p>
+              <p>뽀로로 시스템</p>
+              <p>AWS, Azure Multi-Cloud 구축, 연동 및 유지보수</p>
             </div>
           </li>
         </ul>
