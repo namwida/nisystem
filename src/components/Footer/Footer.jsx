@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="inner">
         <ul className={styles.terms}>
           <li>
-            <Link to="/">이용약관</Link>
+            <Link to="/terms/1">이용약관</Link>
           </li>
           <li>
-            <Link to="/">개인정보처리방침</Link>
+            <Link to="/terms/2">개인정보처리방침</Link>
           </li>
         </ul>
         <ul className={styles.company_box}>
@@ -19,7 +19,9 @@ export default function Footer() {
           <li>사업자등록번호: 646-81-02517</li>
           <li>대표전화: 1666-2869</li>
           <li>이메일: sales@nisystem.co.kr</li>
-          <li>주소: 경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)</li>
+          <li>
+            주소: 경기도 의왕시 성고개로 53, A동 805호 (포일동, 에이스청계타워)
+          </li>
         </ul>
         <p className={styles.copyrite}>
           Copyright ⓒ NISYSTEM. All rights reserved.

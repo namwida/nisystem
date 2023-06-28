@@ -1,7 +1,7 @@
 import "./App.css";
 import "./styles/common.css";
 import "./styles/reset.css";
-import "./styles/variable.css"
+import "./styles/variable.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeMain from "./pages/Home/Main/Main";
 import AboutCompany from "./pages/About/Company/Company";
@@ -33,6 +33,9 @@ import ASM from "./pages/Besiness/Software/DetailPage/ASM";
 import Secure from "./pages/Besiness/Software/DetailPage/Secure";
 import Internet from "./pages/Besiness/Software/DetailPage/Internet";
 import Partner from "./pages/About/Partner/Partner";
+import Privacy1 from "./pages/Terms/Privacy1/Privacy1";
+import Privacy2 from "./pages/Terms/Privacy2/Privacy2";
+import Service from "./pages/Terms/Service/Service";
 
 function App() {
   return (
@@ -77,7 +80,11 @@ function App() {
         <Route path="/customer" element={<Customer />} />
         {/* 채용 */}
         <Route path="/employment" element={<Employment />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/terms" element={<Service />} />
+        <Route path="/terms/1" element={<Service />} />
+        <Route path="/terms/2" element={<Privacy1 />} />
+        <Route path="/terms/3" element={<Privacy2 />} />
+        <Route component={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

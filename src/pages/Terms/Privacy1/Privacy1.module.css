@@ -1,0 +1,17 @@
+.terms_privacy1 {
+  padding-top: var(--header-height);
+  padding-bottom: var(--section-bottom);
+}
+.terms_privacy1 dl:first-of-type {
+  margin-top: 20px;
+}
+.terms_privacy1 dl {
+  margin-bottom: 20px;
+}
+.terms_privacy1 dt {
+  font-size: var(--font-size--10);
+  font-weight: 600;
+}
+.terms_privacy1 dd {
+  font-size: var(--font-size--10);
+}

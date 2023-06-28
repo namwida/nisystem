@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import styles from "./Customer.module.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Customer() {
   const [isLoading, setIsLoading] = useState(false);
@@ -78,7 +79,11 @@ export default function Customer() {
                 value={value.type}
                 onChange={onChange}
               >
-                <option value="" disabled defaultValue="문의 유형을 선택해주세요">
+                <option
+                  value=""
+                  disabled
+                  defaultValue="문의 유형을 선택해주세요"
+                >
                   문의 유형을 선택해주세요
                 </option>
                 <option value="컨설팅">견적요청</option>
@@ -190,19 +195,14 @@ export default function Customer() {
                 <input type="checkbox" id="agree" required />
                 <label htmlFor="agree">
                   개인정보의 수집 및 이용에 동의합니다.
+                  <Link to="/terms/3" className={styles.more_btn} target="_blank"> (자세히 보기)</Link>
                 </label>
               </div>
             </div>
             <div className={styles.button_box}>
-              {isLoading && (
-                <p className={styles.loading_msg}>
-                  제출중입니다.
-                </p>
-              )}
+              {isLoading && <p className={styles.loading_msg}>제출중입니다.</p>}
               {isError && (
-                <p className={styles.error_msg}>
-                  제출에 실패하였습니다.
-                </p>
+                <p className={styles.error_msg}>제출에 실패하였습니다.</p>
               )}
               <input type="submit" value="제출" />
             </div>

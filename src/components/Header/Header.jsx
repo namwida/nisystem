@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const pathname = useLocation().pathname;
-  console.log("pathname", pathname);
 
   const [hamToggle, setHamToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState({
@@ -268,10 +267,24 @@ export default function Header() {
             </ul>
           </li>
           <li>
-            <Link to="/customer">고객문의</Link>
+            <Link
+              to="/customer"
+              className={
+                pathname.includes("/customer") ? styles.path_active : ""
+              }
+            >
+              고객문의
+            </Link>
           </li>
           <li>
-            <Link to="/employment">채용</Link>
+            <Link
+              to="/employment"
+              className={
+                pathname.includes("/employment") ? styles.path_active : ""
+              }
+            >
+              채용
+            </Link>
           </li>
         </ul>
       </div>

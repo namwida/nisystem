@@ -108,6 +108,10 @@ textarea {
   outline: none;
   cursor: pointer;
 }
+.more_btn {
+  font-size: var(--font-size--13);
+  color: var(--color--blue-2);
+}
 .loading_msg {
   width: 100%;
   position: absolute;

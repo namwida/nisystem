@@ -1,0 +1,14 @@
+.terms_service {
+  padding-top: var(--header-height);
+  padding-bottom: var(--section-bottom);
+}
+.terms_service dl {
+  margin-bottom: 20px;
+}
+.terms_service dt {
+  font-size: var(--font-size--10);
+  font-weight: 600;
+}
+.terms_service dd {
+  font-size: var(--font-size--10);
+}
