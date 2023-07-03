@@ -21,3 +21,11 @@
   color: var(--color--blue-1);
   border: 1px solid var(--color--blue-1);
 }
+@media screen and (max-width: 767px) {
+  .terms_nav {
+    flex-direction: column;
+  }
+  .terms_nav li {
+    height: 44px;
+  }
+}
