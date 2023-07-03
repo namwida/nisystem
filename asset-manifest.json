@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nisystem/static/css/main.0c0527cd.css",
+    "main.css": "/nisystem/static/css/main.5235ea54.css",
     "main.js": "/nisystem/static/js/main.62d79b04.js",
     "static/js/787.d4c15b7a.chunk.js": "/nisystem/static/js/787.d4c15b7a.chunk.js",
     "static/media/header_business6.svg": "/nisystem/static/media/header_business6.68e73b005573e69d1208.svg",
@@ -29,12 +29,12 @@
     "static/media/main_customer2_1.svg": "/nisystem/static/media/main_customer2_1.22f28059ae4cdeafb4ee.svg",
     "static/media/main_customer3_3.svg": "/nisystem/static/media/main_customer3_3.a95b2b0723df66d831b8.svg",
     "index.html": "/nisystem/index.html",
-    "main.0c0527cd.css.map": "/nisystem/static/css/main.0c0527cd.css.map",
+    "main.5235ea54.css.map": "/nisystem/static/css/main.5235ea54.css.map",
     "main.62d79b04.js.map": "/nisystem/static/js/main.62d79b04.js.map",
     "787.d4c15b7a.chunk.js.map": "/nisystem/static/js/787.d4c15b7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0527cd.css",
+    "static/css/main.5235ea54.css",
     "static/js/main.62d79b04.js"
   ]
 }
