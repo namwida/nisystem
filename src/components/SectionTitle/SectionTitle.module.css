@@ -2,9 +2,10 @@
   position: relative;
   font-size: var(--font-size--4);
   font-weight: bold;
-  margin-bottom: 63px;
+  margin-bottom: 40px;
+  color: #000;
 }
-.page_title::after {
+/* .page_title::after {
   position: absolute;
   left: 0;
   bottom: -24px;
@@ -13,7 +14,7 @@
   width: 40px;
   height: 3px;
   background-color: #0079cc;
-}
+} */
 @media screen and (max-width: 767px) {
   .page_title {
     margin-bottom: 48px;

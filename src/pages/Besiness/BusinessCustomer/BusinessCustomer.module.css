@@ -1,0 +1,39 @@
+.business_customer {
+  margin-bottom: var(--section-bottom);
+  text-align: center;
+}
+.business_customer h2 {
+  margin-bottom: 30px;
+  font-size: var(--font-size--4);
+  font-weight: bold;
+}
+.business_customer div {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.business_customer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 36px;
+  max-width: 400px;
+  width: 100%;
+  font-size: var(--font-size--8);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+}
+.business_customer svg {
+  fill: #fff;
+}
+.business_customer .tel {
+  background-color: var(--color--gray-5);
+}
+.business_customer .mail {
+  background-color: var(--color--blue-2);
+}

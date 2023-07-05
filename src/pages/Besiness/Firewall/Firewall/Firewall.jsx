@@ -2,8 +2,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import Layout from "../../../../components/Layout/Layout";
 import PageHeader from "../../../../components/PageHeader/PageHeader";
 import styles from "./Firewall.module.css";
-import BusinessTabMenu from "../../../../components/Business/TapMenu.module.css/TapMenu";
 import BusinessTabMenu2 from "../../../../components/Business/TabMenu2/TabMenu2";
+import BusinessCustomer from "../../BusinessCustomer/BusinessCustomer";
 
 export default function Firewall() {
   return (
@@ -11,8 +11,7 @@ export default function Firewall() {
       <PageHeader
         gnbname="business"
         title="Firewall"
-        destription="고성능 스마트기기의 증가와 영상 통화 등 고급 애플리케이션 보급으로"
-        destription_add="기업은 빠르고 품질좋은 무선랜과 이를 위한 인프라를 필요로 합니다."
+        destription="원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든 위치에 확장할 수 있는 완벽한 컨버전스를 제공합니다."
       />
       <BusinessTabMenu2>
         <li className={styles.topmenu_list}>
@@ -25,6 +24,7 @@ export default function Firewall() {
         </li>
       </BusinessTabMenu2>
       <Outlet />
+      <BusinessCustomer />
     </Layout>
   );
 }

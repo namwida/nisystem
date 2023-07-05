@@ -4,6 +4,7 @@ import PageHeader from "../../../../components/PageHeader/PageHeader";
 import styles from "./Switch.module.css";
 import BusinessTabMenu from "../../../../components/Business/TapMenu.module.css/TapMenu";
 import BusinessTabMenu2 from "../../../../components/Business/TabMenu2/TabMenu2";
+import BusinessCustomer from "../../BusinessCustomer/BusinessCustomer";
 
 export default function Switch() {
   return (
@@ -11,8 +12,8 @@ export default function Switch() {
       <PageHeader
         gnbname="business"
         title="Switch"
-        destription="고성능 스마트기기의 증가와 영상 통화 등 고급 애플리케이션 보급으로"
-        destription_add="기업은 빠르고 품질좋은 무선랜과 이를 위한 인프라를 필요로 합니다."
+        destription="진화하는 환경과 새로운 수요에 맞추기 위해서는 네트워크의 변화가 필요합니다."
+        destription_add="스위치도 마찬가지입니다."
       />
       <BusinessTabMenu2>
         <li className={styles.topmenu_list}>
@@ -49,6 +50,7 @@ export default function Switch() {
         </li>
       </BusinessTabMenu2>
       <Outlet />
+      <BusinessCustomer />
     </Layout>
   );
 }

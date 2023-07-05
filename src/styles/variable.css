@@ -60,7 +60,7 @@
   --main-top: 60px;
 
   /* section */
-  --section-bottom: 60px;
+  --section-bottom: 80px;
 }
 @media screen and (max-width: 1100px) {
   :root {
@@ -74,6 +74,8 @@
     --font-size--3: 28px;
     --font-size--4: 26px;
     --font-size--5: 24px;
+    --font-size--6: 23px;
+    --font-size--7: 22px;
     --font-size--8: 18px;
     --font-size--9: 16px;
 
