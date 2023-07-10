@@ -4,17 +4,18 @@ import BusinessAdvantages from "../../../../components/Business/Advantages/Advan
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import Description from "../../../../components/Business/Description/Description";
+import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
 
 export default function Secure() {
   return (
     <main>
-      <SectionTitle title="개요" />
+      <SectionTitle3 title="개요" />
       <BusinessOutline
         h3="문서중앙화를 통해 내부 자료 유출방지 솔루션"
         p1="시큐어디스크는 사용자PC에 자료 저장을 금지시켜 내부자료 유출을 원천차단함과 동시에 문서중앙화와 업무효율성을 보장하는 전사적 파일보안 솔루션입니다."
         link="https://cdn1.estsecurity.com/brochure/securedisk/ESTsecurity_Securedisk_Brochure.pdf"
       />
-      <SectionTitle title="특장점" />
+      <SectionTitle3 title="특장점" />
       <Description>
         <li>
           <h3>내부 자료 유출 원천 차단</h3>
@@ -44,7 +45,7 @@ export default function Secure() {
           </ul>
         </li>
       </Description>
-      <SectionTitle title="주요기능" />
+      <SectionTitle3 title="주요기능" />
       <section className={`${styles.features} inner`}>
         <h3>문서중앙화로 자료 유출 및 유실 원천 차단</h3>
         <img

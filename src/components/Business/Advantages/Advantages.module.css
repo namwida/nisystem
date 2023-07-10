@@ -13,6 +13,7 @@
 .business_advantages ul {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .business_advantages ul li {
@@ -23,9 +24,18 @@
   width: calc((100% - 60px) / 3);
   word-break: keep-all;
 }
+.business_advantages ul li svg {
+  width: 35px;
+  height: 35px;
+}
 .business_advantages ul li img {
   margin-bottom: 16px;
   width: 50px;
+}
+@media screen and (max-width: 1100px) {
+  .business_advantages ul li {
+    width: calc((100% - 60px) / 2);
+  }
 }
 @media screen and (max-width: 767px) {
   .business_advantages {

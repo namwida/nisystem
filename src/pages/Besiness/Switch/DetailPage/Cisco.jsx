@@ -1,13 +1,13 @@
-import { AiOutlineMoneyCollect } from "react-icons/ai";
-import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import BusinessAdvantages from "../../../../components/Business/Advantages/Advantages";
-import BusinessComponent from "../../../../components/Business/Component/Component";
-import Model from "../../../../components/Business/Model/Model";
-import BusinessModelBest from "../../../../components/Business/Model/Best/Best";
-import BusinessModelDatasheet from "../../../../components/Business/Model/Datasheet/Datasheet";
 import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
-import { BsShareFill, BsShieldShaded, BsSliders, BsStickies, BsSubtract } from "react-icons/bs";
+import {
+  BsBroadcastPin,
+  BsDatabaseLock,
+  BsShieldShaded,
+  BsSliders,
+  BsSubtract,
+} from "react-icons/bs";
 
 export default function SwitchCisco() {
   return (
@@ -21,7 +21,9 @@ export default function SwitchCisco() {
         <SectionTitle3 title="제품 특장점" />
         <ul className="inner">
           <li>
-           <BsSliders size="70" />
+            <div>
+              <BsSliders />
+            </div>
             <div>
               <h3>맞춤형 옵션 선택</h3>
               <p>
@@ -31,14 +33,9 @@ export default function SwitchCisco() {
             </div>
           </li>
           <li>
-            <BsShareFill size="70"/>
             <div>
-              <h3>인텐트를 통한 네트워크 혁신</h3>
-              <p>업무상의 요구에 맞는 네트워크 기능을 활용할 수 있습니다.</p>
+              <BsDatabaseLock />
             </div>
-          </li>
-          <li>
-            <BsShieldShaded size="70" />
             <div>
               <h3>인사이트에 기반한 보호</h3>
               <p>
@@ -48,7 +45,9 @@ export default function SwitchCisco() {
             </div>
           </li>
           <li>
-            <BsSubtract size="100" />
+            <div>
+              <BsSubtract />
+            </div>
             <div>
               <h3>미래에 대한 대비</h3>
               <p>

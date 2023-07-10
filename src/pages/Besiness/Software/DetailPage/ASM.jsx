@@ -2,16 +2,17 @@ import styles from "../Software/Software.module.css";
 import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import Description from "../../../../components/Business/Description/Description";
+import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
 
 export default function ASM() {
   return (
     <main>
-      <SectionTitle title="개요" />
+      <SectionTitle3 title="개요" />
       <BusinessOutline
         h3="기업 통합 보안 관리의 중심, ASM"
         p1="ASM(ALYac Security Manager)은 관리자가 기업 내 알약 제품군이 설치된 PC에 대한 통합적인 보안 관리 및 자산관리, 보안 정책 적용을 수행하도록 하는 통합 중앙 관리 솔루션입니다."
       />
-      <SectionTitle title="특장점" />
+      <SectionTitle3 title="특장점" />
       <Description>
         <li>
           <h3>효율적인 사내 보안 통합 관리</h3>
@@ -57,7 +58,7 @@ export default function ASM() {
           </ul>
         </li>
       </Description>
-      <SectionTitle title="주요기능" />
+      <SectionTitle3 title="주요기능" />
       <section className={`${styles.features} inner`}>
         <h3>기업 내 통합 보안관리 체계 구축</h3>
         <img

@@ -6,180 +6,90 @@ import BusinessComponent from "../../../../components/Business/Component/Compone
 import Model from "../../../../components/Business/Model/Model";
 import BusinessModelBest from "../../../../components/Business/Model/Best/Best";
 import BusinessModelDatasheet from "../../../../components/Business/Model/Datasheet/Datasheet";
+import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
+import { BsCloudCheck, BsGlobe, BsHddRack, BsMenuButtonWide, BsOctagonHalf, BsPcHorizontal, BsViewList, BsWindowFullscreen, BsXDiamond } from "react-icons/bs";
 
 export default function SwitchFortinet() {
   return (
     <main>
-      <SectionTitle title="개요" />
+      <SectionTitle3 title="개요" />
       <BusinessOutline
-        h3="SwitchFortinet SwitchFortinet SwitchFortinet"
-        p1="Fortinet은 원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든
-            위치로 확장할 수 있는 완벽한 컨버전스를 제공하는 보안 네트워킹의
-            선구자입니다."
-        p2="FortiGate는 FortiOS Everywhere의 핵심으로, 컨테이너 방화벽, 가상 방화벽 및 어플라이언스를 포함한 다양한 폼 팩터에서 심도 깊은 가시성과 보안을 제공합니다."
+        h3="FortiSwitch는 안전하고 단순하며 확장 가능한 이더넷 솔루션을 제공합니다."
+        p1="Fortinet의 네트워킹 및 보안 융합은 이더넷은 FortiSwitch 및 FortiLink를 통해 보안 인프라의 확장을 지원합니다. FortiSwitch는 추가 라이선스 없이 NAC를 포함한 다양한 기능을 간단하게 배포하고 관리할 수 있습니다. 안전하고 단순한 확장형 이더넷 스위치로 구성된 폭넓은 포트폴리오는 캠퍼스, SD-Branch 및 데이터 센터에 적합합니다."
       />
-      <SectionTitle title="특장점" />
       <BusinessAdvantages>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>Network</h3>
-          <p>
-            현재 사용중인 네트워크를 기존 MRTG와 같이 5분단위가 아닌, 1분 단위로
-            측정합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>HDD&RAM</h3>
-          <p>
-            서버 내 하드디스크의 사용량 및 현재 가용중인 메모리를 한눈에
-            파악하며, 보다 원활한 시스템관리를 지원합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>Load average</h3>
-          <p>
-            시스템 부하상태를 나타내는 로드에버리지를 실시간으로 측정해 언제든
-            시스템의 부하량을 모니터링 합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>CPU&Ping</h3>
-          <p>
-            CPU의 사용량 및 가용량을 체크합니다. 또한 PING체크를 통하여 서비스의
-            네트워크 환경을 체크합니다.
-          </p>
-        </li>
+        <SectionTitle3 title="제품 특장점" />
+        <ul className="inner">
+          <li>
+            <div>
+              <BsOctagonHalf />
+            </div>
+            <div>
+              <h3>보안 패브릭 통합</h3>
+              <p>
+                보안 패브릭 보호를 이더넷 액세스 계층으로 확장하는 FortiLink
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsPcHorizontal />
+            </div>
+            <div>
+              <h3>제로 터치 프로비저닝</h3>
+              <p>이더넷 포트 & 보안 정책의 자동 검색 및 구성</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsMenuButtonWide />
+            </div>
+            <div>
+              <h3>높은 확장성</h3>
+              <p>
+                1, 10, 100 & 다중 기가 이더넷 포트 & 데스크톱에서 데이터
+                센터까지 최대 100개의 GE 업링크 확장
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsWindowFullscreen />
+            </div>
+            <div>
+              <h3>탁월한 가시성</h3>
+              <p>
+                장치 감지 & 온보딩을 포함한 보안 & 네트워크 액세스의 단일 콘솔
+                관리
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsViewList />
+            </div>
+            <div>
+              <h3>POE 및 자동 프로비저닝</h3>
+              <p>
+                FortiLink NAC를 통한 차세대 802.3bt POE & 무료 IoT
+                프로비저닝으로 네트워크 & IoT 장치에 전력 공급
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsXDiamond />
+            </div>
+            <div>
+              <h3>가상 스태킹</h3>
+              <p>
+                FortiLink는 FortiGate 모델 기준으로 최대 300개의 스위치를
+                관리하여 IDF 전반에 걸쳐 스태킹 가능
+              </p>
+            </div>
+          </li>
+        </ul>
       </BusinessAdvantages>
-      <SectionTitle title="성능 및 주요기능" />
-      <BusinessComponent>
-        <div>
-          <h3>네트워크 전반의 가시성을 향상하여 위협 탐지 강화</h3>
-          <div>
-            <ul>
-              <li>
-                클라이언트 간, 서버 간, 클라이언트-서버간 트래픽을 비롯한 모든
-                네트워크 상호작용을 통해 가시성을 확보하여 내부 위협과 외부
-                위협을 모두 탐지
-              </li>
-              <li>
-                강화된 보안 분석을 수행하고 심층적인 컨텍스트를 확보하여 공격을
-                의미할 수 있는 다양한 이상 행동 탐지
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-        <div>
-          <h3>지속적인 네트워크 트래픽 분석</h3>
-          <div>
-            <ul>
-              <li>
-                네트워크 활동에 대한 감사 기록을 통해 심층적인 포렌식 조사 지원
-              </li>
-              <li>
-                전체 네트워크에서 위협 탐지, 사고 대응, 포렌식 가속화 및 향상
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-      </BusinessComponent>
-      <SectionTitle title="모델 및 사용" />
-      <Model>
-        <thead>
-          <tr>
-            <th>모델명</th>
-            <th>이미지</th>
-            <th>방화벽</th>
-            <th>위협보호</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>데이터시트</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>
-              <BusinessModelBest />
-              FortiGate 200F
-            </th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>FortiGate 80F</th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>FortiGate 70F</th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>-</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>FortiGate 70F</th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>-</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-        </tbody>
-      </Model>
     </main>
   );
 }
