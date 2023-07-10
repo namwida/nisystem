@@ -13,7 +13,7 @@ export default function SwitchExtreme() {
         p1="계획, 설계, 구현 및 운영에서 유연한 파이낸싱, 고객 최고 등급 지원 및 라이프 사이클 서비스를 통해 네트워크를 단순화하고 최적화하십시오."
       />
       <BusinessAdvantages>
-        <SectionTitle3 title="제품 특장점" />
+        <SectionTitle3 title="특장점" />
         <ul className="inner">
           <li>
             <div>

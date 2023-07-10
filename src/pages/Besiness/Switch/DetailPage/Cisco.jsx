@@ -18,7 +18,7 @@ export default function SwitchCisco() {
         p1="탁월한 경험을 제공하고 인재와 혁신을 유도하여 경쟁 우위를 확보하십시오. 시스코의 기존 스위치 제품 및 신제품으로 이 모두가 가능합니다."
       />
       <BusinessAdvantages>
-        <SectionTitle3 title="제품 특장점" />
+        <SectionTitle3 title="특장점" />
         <ul className="inner">
           <li>
             <div>

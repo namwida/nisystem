@@ -19,7 +19,7 @@ export default function SwitchFortinet() {
         p1="Fortinet의 네트워킹 및 보안 융합은 이더넷은 FortiSwitch 및 FortiLink를 통해 보안 인프라의 확장을 지원합니다. FortiSwitch는 추가 라이선스 없이 NAC를 포함한 다양한 기능을 간단하게 배포하고 관리할 수 있습니다. 안전하고 단순한 확장형 이더넷 스위치로 구성된 폭넓은 포트폴리오는 캠퍼스, SD-Branch 및 데이터 센터에 적합합니다."
       />
       <BusinessAdvantages>
-        <SectionTitle3 title="제품 특장점" />
+        <SectionTitle3 title="특장점" />
         <ul className="inner">
           <li>
             <div>

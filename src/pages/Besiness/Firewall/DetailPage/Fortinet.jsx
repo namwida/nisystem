@@ -13,7 +13,7 @@ export default function FirewallFortinet() {
         p1="FortiGate는 원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든 위치에 확장할 수 있는 완벽한 컨버전스를 제공합니다. Fortinet는 복잡한 하이브리드 환경에서 통합 관리 및 일관된 보안을 위해 FortiManager를 통해 항상 하이브리드 메시 방화벽의 개념을 제공해 왔습니다. Fortinet FortiOS 운영 체제는 다양한 폼 팩터에서 심도 깊은 가시성과 보안을 제공합니다."
       />
       <BusinessAdvantages>
-        <SectionTitle3 title="제품 특장점" />
+        <SectionTitle3 title="특장점" />
         <ul className="inner">
           <li>
             <div>

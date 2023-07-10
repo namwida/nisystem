@@ -12,7 +12,7 @@ export default function SwitchZyxel() {
         p1="단일 장애점(SPOF)이 없는 시스템 구성, IEEE 802.3at Poe 지원, 다양한 보안기능을 지원합니다."
       />
       <BusinessAdvantages>
-        <SectionTitle3 title="제품 특장점" />
+        <SectionTitle3 title="특장점" />
         <ul className="inner">
           <li>
             <div>
