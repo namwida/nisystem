@@ -127,9 +127,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .about_history ul {
-    /* border: 1px solid red; */
-  }
   .year_area li::after {
     left: 101px;
   }
@@ -159,5 +156,10 @@
   }
   .year_area .month.last::before {
     height: 190px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .year_area .month.last::before {
+    height: 280px;
   }
 }

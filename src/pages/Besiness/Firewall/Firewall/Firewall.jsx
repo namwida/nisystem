@@ -11,7 +11,7 @@ export default function Firewall() {
       <PageHeader
         gnbname="business"
         title="Firewall"
-        destription="원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든 위치에 확장할 수 있는 완벽한 컨버전스를 제공합니다."
+        destription="복잡한 하이브리드 환경에서 통합 관리 및 일관된 보안을 제공합니다."
       />
       <BusinessTabMenu2>
         <li className={styles.topmenu_list}>

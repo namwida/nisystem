@@ -13,7 +13,6 @@ export default function Switch() {
         gnbname="business"
         title="Switch"
         destription="진화하는 환경과 새로운 수요에 맞추기 위해서는 네트워크의 변화가 필요합니다."
-        destription_add="스위치도 마찬가지입니다."
       />
       <BusinessTabMenu2>
         <li className={styles.topmenu_list}>

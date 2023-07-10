@@ -4,6 +4,10 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import BusinessService from "../../../components/Business/Service/Service";
 import Layout from "../../../components/Layout/Layout";
 import Description from "../../../components/Business/Description/Description";
+import SectionTitle3 from "../../../components/SectionTitle3/SectionTitle3";
+import BusinessCustomer from "../BusinessCustomer/BusinessCustomer";
+import { BsHddStack, BsLayersHalf, BsMenuApp, BsPeople } from "react-icons/bs";
+import BusinessAdvantages from "../../../components/Business/Advantages/Advantages";
 
 export default function MSP() {
   return (
@@ -17,7 +21,7 @@ export default function MSP() {
       <main className={styles.besiness_msp}>
         <div className={`${styles.inner}`}>
           <main>
-            <SectionTitle title="주요 서비스" />
+            <SectionTitle3 title="주요 서비스" />
             <BusinessService>
               <ul className={styles.service}>
                 <li>
@@ -53,41 +57,45 @@ export default function MSP() {
                 </li>
               </ul>
             </BusinessService>
-            <SectionTitle title="특장점" />
-            <Description>
-              <li>
-                <h3>ONE-STOP 통합서비스</h3>
-                <ul>
-                  <li>
-                    IDC, NW, 운영, 유지보수, 보안 등 사업 전반을 책임지는 통합
-                    서비스 제공
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>고객 맞춤형 서비스</h3>
-                <ul>
-                  <li>
-                    고객사 환경에 맞는 최적의 IT 아웃소싱 체계를 다양한 서비스
-                    형태로 선택가능
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>전문인력 24HX365D 감시</h3>
-                <ul>
-                  <li>검증된 전문 인력들이 IDC 상주</li>
-                  <li>1:1 전담 모니터링 및 기술 지원</li>
-                </ul>
-              </li>
-              <li>
-                <h3>검증된 운영 노하우</h3>
-                <ul>
-                  <li>17년간의 운영 노하우와 다양한 운영 레퍼런스 보유</li>
-                  <li>국내 뿐만 아니라 해외에 위치한 기업까지 가능</li>
-                </ul>
-              </li>
-            </Description>
+            <BusinessAdvantages>
+              <SectionTitle3 title="특장점" />
+              <ul className="inner">
+                <li>
+                  <div>
+                    <BsLayersHalf />
+                  </div>
+                  <div>
+                    <h3>ONE-STOP 통합서비스</h3>
+                    <p>
+                      IDC, NW, 운영, 유지보수, 보안 등 사업 전반을 책임지는 통합
+                      서비스 제공
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <BsMenuApp />
+                  </div>
+                  <div>
+                    <h3>전문인력 24HX365D 감시</h3>
+                    <p>
+                      검증된 전문 인력들이 IDC 상주, 1:1 전담 모니터링 및 기술
+                      지원
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <BsPeople />
+                  </div>
+                  <div>
+                    <h3>검증된 운영 노하우</h3>
+                    <p>17년간의 운영 노하우와 다양한 운영 레퍼런스 보유</p>
+                  </div>
+                </li>
+              </ul>
+            </BusinessAdvantages>
+            <BusinessCustomer />
           </main>
         </div>
       </main>

@@ -39,7 +39,7 @@
 .about_client dd {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
 }
 .about_client dd img {
@@ -62,5 +62,8 @@
   }
   .about_client dl {
     width: calc((100% - 10px) / 2);
+  }
+  .about_client dd {
+    padding: 12px 0;
   }
 }

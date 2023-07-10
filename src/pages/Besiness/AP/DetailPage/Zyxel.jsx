@@ -1,177 +1,67 @@
-import { AiOutlineMoneyCollect } from "react-icons/ai";
-import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import BusinessAdvantages from "../../../../components/Business/Advantages/Advantages";
-import BusinessComponent from "../../../../components/Business/Component/Component";
-import Model from "../../../../components/Business/Model/Model";
-import BusinessModelBest from "../../../../components/Business/Model/Best/Best";
-import BusinessModelDatasheet from "../../../../components/Business/Model/Datasheet/Datasheet";
+import {
+  BsBroadcast,
+  BsColumnsGap,
+  BsHddStack,
+  BsKey,
+  BsShieldLock,
+  BsTerminal,
+} from "react-icons/bs";
+import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
 
 export default function APZyxel() {
   return (
     <main>
-      <SectionTitle title="개요" />
+      <SectionTitle3 title="개요" />
       <BusinessOutline
-        h3="APZyxel APZyxel APZyxel APZyxel"
-        p1="Fortinet은 원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든
-            위치로 확장할 수 있는 완벽한 컨버전스를 제공하는 보안 네트워킹의
-            선구자입니다."
-        p2="FortiGate는 FortiOS Everywhere의 핵심으로, 컨테이너 방화벽, 가상 방화벽 및 어플라이언스를 포함한 다양한 폼 팩터에서 심도 깊은 가시성과 보안을 제공합니다."
+        h3="강력한 보안과 안정적인 무선 네트워크 서비스"
+        p1="중소기업 대상의 네트워크·보안 장비 전문기업인 자이젤코리아는 각 산업분야별 구축사례가 다양하여 성공적인 무선 네트워크 구축을 할 수 있습니다."
       />
-      <SectionTitle title="특장점" />
       <BusinessAdvantages>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>HDD&RAM</h3>
-          <p>
-            서버 내 하드디스크의 사용량 및 현재 가용중인 메모리를 한눈에
-            파악하며, 보다 원활한 시스템관리를 지원합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>Load average</h3>
-          <p>
-            시스템 부하상태를 나타내는 로드에버리지를 실시간으로 측정해 언제든
-            시스템의 부하량을 모니터링 합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>CPU&Ping</h3>
-          <p>
-            CPU의 사용량 및 가용량을 체크합니다. 또한 PING체크를 통하여 서비스의
-            네트워크 환경을 체크합니다.
-          </p>
-        </li>
+        <SectionTitle3 title="특장점" />
+        <ul className="inner">
+          <li>
+            <div>
+              <BsShieldLock />
+            </div>
+            <div>
+              <h3>사용자 보안 위한 통합보안</h3>
+              <p>
+                카스퍼스키, 트렌드마이크로, 사이렌 등 글로벌 보안 기업의 엔진을
+                통합보안 장비인 USG 시리즈에 탑재해 주 기적인 업데이트를 통해
+                최신 보안 위협으로부터 빠르 고 정확한 실시간 보호 기능을 수행
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsBroadcast />
+            </div>
+            <div>
+              <h3>무선 튜닝으로 신호 중첩·채널 간섭 최소화</h3>
+              <p>
+                ​주변 무선 네트워크 환경을 분석해 클라이언트의 위치에 따라
+                안테나 패턴을 변경하는 고성능 AP와 한정된 공간 내에 설치되는 수
+                많은 AP와 공유기로 인한 채널 중첩을 최소화하는 DCS(Dynamic
+                Channel Selection) 기능을 제공
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsTerminal />
+            </div>
+            <div>
+              <h3>긴밀한 현장 기술 지원 필수</h3>
+              <p>
+                실제 운용되고 있는 장비에서 지속적으로 방화 벽뿐 아니라 라우팅,
+                NAT 등의 IP 및 경로에 대한 정책 적용 및 변경
+              </p>
+            </div>
+          </li>
+        </ul>
       </BusinessAdvantages>
-      <SectionTitle title="성능 및 주요기능" />
-      <BusinessComponent>
-        <div>
-          <h3>네트워크 전반의 가시성을 향상하여 위협 탐지 강화</h3>
-          <div>
-            <ul>
-              <li>
-                클라이언트 간, 서버 간, 클라이언트-서버간 트래픽을 비롯한 모든
-                네트워크 상호작용을 통해 가시성을 확보하여 내부 위협과 외부
-                위협을 모두 탐지
-              </li>
-              <li>
-                강화된 보안 분석을 수행하고 심층적인 컨텍스트를 확보하여 공격을
-                의미할 수 있는 다양한 이상 행동 탐지
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-        <div>
-          <h3>네트워크 전반의 가시성을 향상하여 위협 탐지 강화</h3>
-          <div>
-            <ul>
-              <li>
-                클라이언트 간, 서버 간, 클라이언트-서버간 트래픽을 비롯한 모든
-                네트워크 상호작용을 통해 가시성을 확보하여 내부 위협과 외부
-                위협을 모두 탐지
-              </li>
-              <li>
-                강화된 보안 분석을 수행하고 심층적인 컨텍스트를 확보하여 공격을
-                의미할 수 있는 다양한 이상 행동 탐지
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-        <div>
-          <h3>지속적인 네트워크 트래픽 분석</h3>
-          <div>
-            <ul>
-              <li>
-                네트워크 활동에 대한 감사 기록을 통해 심층적인 포렌식 조사 지원
-              </li>
-              <li>
-                전체 네트워크에서 위협 탐지, 사고 대응, 포렌식 가속화 및 향상
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-      </BusinessComponent>
-      <SectionTitle title="모델 및 사용" />
-      <Model>
-        <thead>
-          <tr>
-            <th>모델명</th>
-            <th>이미지</th>
-            <th>방화벽</th>
-            <th>위협보호</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>데이터시트</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>
-              <BusinessModelBest />
-              FortiGate 200F
-            </th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>FortiGate 80F</th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>
-              <BusinessModelBest />
-              FortiGate 70F
-            </th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </Model>
     </main>
   );
 }

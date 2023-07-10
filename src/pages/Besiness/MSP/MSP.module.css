@@ -1,8 +1,5 @@
 .besiness_msp {
-  padding-top: 100px;
-}
-.besiness_msp section:not(:last-child) {
-  margin-bottom: 80px;
+  padding-top: var(--main-top);
 }
 /* 주요 서비스 */
 .service li:nth-child(1) {

@@ -6,11 +6,12 @@ import Layout from "../../../components/Layout/Layout";
 import Description from "../../../components/Business/Description/Description";
 import {
   BsClipboard2Pulse,
-  BsCollection,
   BsFileEarmarkRuled,
   BsPersonCheck,
   BsPersonWorkspace,
 } from "react-icons/bs";
+import SectionTitle3 from "../../../components/SectionTitle3/SectionTitle3";
+import BusinessCustomer from "../BusinessCustomer/BusinessCustomer";
 
 export default function Consulting() {
   return (
@@ -24,7 +25,7 @@ export default function Consulting() {
       <main className={styles.besiness_consulting}>
         <div className={`${styles.inner}`}>
           <main>
-            <SectionTitle title="주요 서비스" />
+            <SectionTitle3 title="주요 서비스" />
             <BusinessService>
               <ul className={styles.service}>
                 <li>
@@ -43,29 +44,8 @@ export default function Consulting() {
                 </li>
               </ul>
             </BusinessService>
-            <SectionTitle title="이용절차" />
             <Process />
-            <SectionTitle title="특장점" />
-            <Description>
-              <li>
-                <h3>준비중</h3>
-                <ul>
-                  <li>
-                    IDC, NW, 운영, 유지보수, 보안 등 사업 전반을 책임지는 통합
-                    서비스 제공
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>준비중</h3>
-                <ul>
-                  <li>
-                    고객사 환경에 맞는 최적의 IT 아웃소싱 체계를 다양한 서비스
-                    형태로 선택가능
-                  </li>
-                </ul>
-              </li>
-            </Description>
+            <BusinessCustomer />
           </main>
         </div>
       </main>
@@ -76,29 +56,30 @@ export default function Consulting() {
 function Process() {
   return (
     <section className={styles.business_service_process}>
+      <SectionTitle3 title="이용절차" />
       <div className="inner">
         <ul>
           <li>
             <div className={styles.image_box}>
-              <BsClipboard2Pulse size="70" />
+              <BsClipboard2Pulse />
             </div>
             <h3>Step1. 환경분석, 컨설팅</h3>
           </li>
           <li>
             <div className={styles.image_box}>
-              <BsPersonCheck size="70" />
+              <BsPersonCheck />
             </div>
             <h3>Step2. 상품안내, 제안</h3>
           </li>
           <li>
             <div className={styles.image_box}>
-              <BsPersonWorkspace size="70" />
+              <BsPersonWorkspace />
             </div>
             <h3>Step3. 인프라 설계 및 구성</h3>
           </li>
           <li>
             <div className={styles.image_box}>
-              <BsFileEarmarkRuled size="70" />
+              <BsFileEarmarkRuled />
             </div>
             <h3>Step4. 요구사항 견적산출</h3>
           </li>

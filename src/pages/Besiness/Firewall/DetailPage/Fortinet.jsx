@@ -2,23 +2,23 @@ import styles from "./Fortinet.module.css";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import BusinessAdvantages from "../../../../components/Business/Advantages/Advantages";
 import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
+import { BsGear, BsGraphUp, BsGrid3X3Gap } from "react-icons/bs";
 
 export default function FirewallFortinet() {
   return (
     <main>
       <SectionTitle3 title="개요" />
       <BusinessOutline
-        h3="FortiGate는 하이브리드 메시 방화벽에 대한 통합 관리를 갖춘 유일한 NGFW(차세대 방화벽)입니다."
+        h3="FortiGate는 하이브리드 메시 방화벽에 대한 통합 관리를 갖춘 유일한 NGFW(차세대 방화벽)"
         p1="FortiGate는 원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든 위치에 확장할 수 있는 완벽한 컨버전스를 제공합니다. Fortinet는 복잡한 하이브리드 환경에서 통합 관리 및 일관된 보안을 위해 FortiManager를 통해 항상 하이브리드 메시 방화벽의 개념을 제공해 왔습니다. Fortinet FortiOS 운영 체제는 다양한 폼 팩터에서 심도 깊은 가시성과 보안을 제공합니다."
       />
       <BusinessAdvantages>
         <SectionTitle3 title="제품 특장점" />
         <ul className="inner">
           <li>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/business/firewall/icon-benefits-fortios.svg`}
-              alt="컨버전스 특수문자"
-            />
+            <div>
+              <BsGrid3X3Gap />
+            </div>
             <div>
               <h3>컨버전스</h3>
               <p>
@@ -28,10 +28,9 @@ export default function FirewallFortinet() {
             </div>
           </li>
           <li>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/business/firewall/icon-asic.svg`}
-              alt="가속화 특수문자"
-            />
+            <div>
+              <BsGraphUp />
+            </div>
             <div>
               <h3>가속화</h3>
               <p>
@@ -40,10 +39,9 @@ export default function FirewallFortinet() {
             </div>
           </li>
           <li>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/business/firewall/icon-labs-green.svg`}
-              alt="ai/ml 특수문자"
-            />
+            <div>
+              <BsGear />
+            </div>
             <div>
               <h3>AI/ML 보안</h3>
               <p>

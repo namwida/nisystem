@@ -3,7 +3,7 @@
   background-color: #f7f7f7;
 }
 .business_advantages h3 {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-size: var(--font-size--8);
   font-weight: bold;
 }
@@ -45,6 +45,12 @@
     flex-wrap: wrap;
   }
   .business_advantages ul li {
+    gap: 12px;
+    max-width: 100%;
     width: 100%;
+  }
+  .business_advantages ul li svg {
+    width: 24px;
+    height: 24px;
   }
 }

@@ -6,174 +6,58 @@ import BusinessComponent from "../../../../components/Business/Component/Compone
 import Model from "../../../../components/Business/Model/Model";
 import BusinessModelBest from "../../../../components/Business/Model/Best/Best";
 import BusinessModelDatasheet from "../../../../components/Business/Model/Datasheet/Datasheet";
+import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
+import { BsColumnsGap, BsFilePost, BsHdd, BsHddStack, BsIntersect } from "react-icons/bs";
 
 export default function APFortinet() {
   return (
     <main>
-      <SectionTitle title="개요" />
+      <SectionTitle3 title="개요" />
       <BusinessOutline
-        h3="APFortinet APFortinet APFortinet APFortinet"
-        p1="Fortinet은 원격 사무실, 지사, 캠퍼스, 데이터 센터 및 클라우드 등 모든
-            위치로 확장할 수 있는 완벽한 컨버전스를 제공하는 보안 네트워킹의
-            선구자입니다."
-        p2="FortiGate는 FortiOS Everywhere의 핵심으로, 컨테이너 방화벽, 가상 방화벽 및 어플라이언스를 포함한 다양한 폼 팩터에서 심도 깊은 가시성과 보안을 제공합니다."
+        h3="보안 무선 액세스 포인트"
+        p1="사무실이나 야외에서 무선 액세스가 필요한 순간에 FortiAP는 고급 기술을 바탕으로 빠르고 안정적인 성능을 제공하여 사용자가 필요할 때 어디서나 유연하게 업무를 처리하도록 지원합니다. 심층 통합과 자동화를 통해 전체적인 가시성과 보안을 기본으로 제공하므로 중앙 집중식 관리, 제로 터치 배포, 통합 네트워크 액세스 제어와 같은 이점을 지닌 진정한 통합 플랫폼을 추가 비용 없이 이용하실 수 있습니다."
       />
-      <SectionTitle title="특장점" />
       <BusinessAdvantages>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>HDD&RAM</h3>
-          <p>
-            서버 내 하드디스크의 사용량 및 현재 가용중인 메모리를 한눈에
-            파악하며, 보다 원활한 시스템관리를 지원합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>Load average</h3>
-          <p>
-            시스템 부하상태를 나타내는 로드에버리지를 실시간으로 측정해 언제든
-            시스템의 부하량을 모니터링 합니다.
-          </p>
-        </li>
-        <li>
-          <AiOutlineMoneyCollect size="70" color="#0079cc" />
-          <h3>CPU&Ping</h3>
-          <p>
-            CPU의 사용량 및 가용량을 체크합니다. 또한 PING체크를 통하여 서비스의
-            네트워크 환경을 체크합니다.
-          </p>
-        </li>
+        <SectionTitle3 title="특장점" />
+        <ul className="inner">
+          <li>
+            <div>
+              <BsHdd />
+            </div>
+            <div>
+              <h3>빠르고 안정적인 무선 지원</h3>
+              <p>
+                802.11ax Wi-Fi 6 및 OFDMA 기술, 2x2, 4x4 및 8x8 MIMO 모델을 통해
+                애플리케이션에 최적의 가성비 제공
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsIntersect />
+            </div>
+            <div>
+              <h3>보안 확장</h3>
+              <p>
+                ​WIPS/WIDS를 사용하여 IPS 및 IDS 보호를 무선으로 확장, 비인가 AP
+                탐지 및 마이그레이션으로 무단 액세스 차단
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <BsFilePost />
+            </div>
+            <div>
+              <h3>성장 속도에 맞춰 간편하게 확장</h3>
+              <p>
+                중앙 집중식 관리와 제로 터치 배포 및 프로비저닝을 통해 배포,
+                보고 및 유지관리 단순화
+              </p>
+            </div>
+          </li>
+        </ul>
       </BusinessAdvantages>
-      <SectionTitle title="성능 및 주요기능" />
-      <BusinessComponent>
-        <div>
-          <h3>네트워크 전반의 가시성을 향상하여 위협 탐지 강화</h3>
-          <div>
-            <ul>
-              <li>
-                클라이언트 간, 서버 간, 클라이언트-서버간 트래픽을 비롯한 모든
-                네트워크 상호작용을 통해 가시성을 확보하여 내부 위협과 외부
-                위협을 모두 탐지
-              </li>
-              <li>
-                강화된 보안 분석을 수행하고 심층적인 컨텍스트를 확보하여 공격을
-                의미할 수 있는 다양한 이상 행동 탐지
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-        <div>
-          <h3>네트워크 전반의 가시성을 향상하여 위협 탐지 강화</h3>
-          <div>
-            <ul>
-              <li>
-                클라이언트 간, 서버 간, 클라이언트-서버간 트래픽을 비롯한 모든
-                네트워크 상호작용을 통해 가시성을 확보하여 내부 위협과 외부
-                위협을 모두 탐지
-              </li>
-              <li>
-                강화된 보안 분석을 수행하고 심층적인 컨텍스트를 확보하여 공격을
-                의미할 수 있는 다양한 이상 행동 탐지
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-        <div>
-          <h3>지속적인 네트워크 트래픽 분석</h3>
-          <div>
-            <ul>
-              <li>
-                네트워크 활동에 대한 감사 기록을 통해 심층적인 포렌식 조사 지원
-              </li>
-              <li>
-                전체 네트워크에서 위협 탐지, 사고 대응, 포렌식 가속화 및 향상
-              </li>
-            </ul>
-            <img src={`${process.env.PUBLIC_URL}/images/rout.png`} alt="" />
-          </div>
-        </div>
-      </BusinessComponent>
-      <SectionTitle title="모델 및 사용" />
-      <Model>
-        <thead>
-          <tr>
-            <th>모델명</th>
-            <th>이미지</th>
-            <th>방화벽</th>
-            <th>위협보호</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>인터페이스</th>
-            <th>데이터시트</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>
-              <BusinessModelBest />
-              FortiGate 200F
-            </th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>FortiGate 80F</th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>
-              <BusinessModelDatasheet />
-            </td>
-          </tr>
-          <tr>
-            <th>
-              <BusinessModelBest />
-              FortiGate 70F
-            </th>
-            <td>
-              <img
-                src={`${process.env.PUBLIC_URL}/images/fortinet.jpg`}
-                alt=""
-              />
-            </td>
-            <td>20Gbps</td>
-            <td>1.2Gbps</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>복수의 GE RJ45, GE SFP 슬롯</td>
-            <td>-</td>
-            <td>
-              -
-            </td>
-          </tr>
-        </tbody>
-      </Model>
     </main>
   );
 }

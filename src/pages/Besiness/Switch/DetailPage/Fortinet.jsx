@@ -1,20 +1,21 @@
-import { AiOutlineMoneyCollect } from "react-icons/ai";
-import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import BusinessAdvantages from "../../../../components/Business/Advantages/Advantages";
-import BusinessComponent from "../../../../components/Business/Component/Component";
-import Model from "../../../../components/Business/Model/Model";
-import BusinessModelBest from "../../../../components/Business/Model/Best/Best";
-import BusinessModelDatasheet from "../../../../components/Business/Model/Datasheet/Datasheet";
 import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
-import { BsCloudCheck, BsGlobe, BsHddRack, BsMenuButtonWide, BsOctagonHalf, BsPcHorizontal, BsViewList, BsWindowFullscreen, BsXDiamond } from "react-icons/bs";
+import {
+  BsMenuButtonWide,
+  BsOctagonHalf,
+  BsPcHorizontal,
+  BsViewList,
+  BsWindowFullscreen,
+  BsXDiamond,
+} from "react-icons/bs";
 
 export default function SwitchFortinet() {
   return (
     <main>
       <SectionTitle3 title="개요" />
       <BusinessOutline
-        h3="FortiSwitch는 안전하고 단순하며 확장 가능한 이더넷 솔루션을 제공합니다."
+        h3="FortiSwitch는 안전하고 단순하며 확장 가능한 이더넷 솔루션을 제공"
         p1="Fortinet의 네트워킹 및 보안 융합은 이더넷은 FortiSwitch 및 FortiLink를 통해 보안 인프라의 확장을 지원합니다. FortiSwitch는 추가 라이선스 없이 NAC를 포함한 다양한 기능을 간단하게 배포하고 관리할 수 있습니다. 안전하고 단순한 확장형 이더넷 스위치로 구성된 폭넓은 포트폴리오는 캠퍼스, SD-Branch 및 데이터 센터에 적합합니다."
       />
       <BusinessAdvantages>

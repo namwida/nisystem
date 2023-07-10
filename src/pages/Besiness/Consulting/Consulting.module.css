@@ -1,12 +1,10 @@
 .besiness_consulting {
-  padding-top: 100px;
+  padding-top: var(--main-top);
 }
 /* 이용절차 */
 .business_service_process {
-  /* background-color: #f7f7f7; */
-}
-.business_service_process > div {
-  padding-top: 60px;
+  padding: 70px 0;
+  background-color: var(--color--blue-5);
 }
 .business_service_process ul {
   display: flex;
@@ -30,23 +28,28 @@
   justify-content: center;
   width: 140px;
   height: 140px;
+  border: 0.5px solid #666;
   border-radius: 50%;
-  background-color: #f7f7f7;
 }
 .business_service_process li svg {
   fill: #666;
+  width: 50%;
+  height: 50%;
+}
+.business_service_process li:hover div {
+  border: 0.5px solid #0079cc;
 }
 .business_service_process li:hover svg {
   fill: #0079cc;
 }
 .business_service_process li h3 {
   padding-top: 30px;
-  font-size: 20px;
+  font-size: var(--font-size--8);
   font-weight: bold;
 }
 .business_service_process p {
   padding-top: 40px;
-  font-size: 14px;
+  font-size: var(--font-size--12);
   color: #888;
 }
 /* 주요 서비스 */
@@ -57,4 +60,24 @@
 .service li:nth-child(2) {
   background: url(/public/images/business/consulting/network.png);
   background-size: cover;
+}
+@media screen and (max-width: 1100px) {
+  .business_service_process li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .business_service_process {
+    padding: 50px 0;
+  }
+  .business_service_process ul {
+    row-gap: 30px;
+  }
+  .business_service_process li {
+    width: 100%;
+  }
+  .business_service_process li div {
+    width: 100px;
+    height: 100px;
+  }
 }

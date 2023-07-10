@@ -2,7 +2,7 @@ import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import BusinessOutline from "../../../../components/Business/Outline/Outline";
 import BusinessAdvantages from "../../../../components/Business/Advantages/Advantages";
 import SectionTitle3 from "../../../../components/SectionTitle3/SectionTitle3";
-import { BsCloudCheck, BsGlobe, BsHddRack } from "react-icons/bs";
+import { BsCloudCheck, BsGlobe, BsHddRack, BsLaptop } from "react-icons/bs";
 
 export default function SwitchExtreme() {
   return (
@@ -10,17 +10,14 @@ export default function SwitchExtreme() {
       <SectionTitle3 title="개요" />
       <BusinessOutline
         h3="Extreme의 범용 유선 포트폴리오로 위험 감소 및 운영 단순화"
-        p1="현대 기업은 네트워크 민첩성, 확장성 및 보안을 요구하지만
-        복잡하지는 않습니다. Extreme Fabric Connect는 위협을 격리하면서
-        배포를 간소화할 뿐만 아니라 여러 위치와 장치 유형에 걸쳐
-        확장되는 통합, 자동화 및 보안 네트워크 솔루션을 제공합니다."
+        p1="계획, 설계, 구현 및 운영에서 유연한 파이낸싱, 고객 최고 등급 지원 및 라이프 사이클 서비스를 통해 네트워크를 단순화하고 최적화하십시오."
       />
       <BusinessAdvantages>
         <SectionTitle3 title="제품 특장점" />
         <ul className="inner">
           <li>
             <div>
-              <BsGlobe />
+              <BsLaptop />
             </div>
             <div>
               <h3>만능인</h3>

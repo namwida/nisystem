@@ -57,4 +57,7 @@
   .about_partner dl {
     width: calc((100% - 10px) / 2);
   }
+  .about_partner dd {
+    padding: 12px 0;
+  }
 }

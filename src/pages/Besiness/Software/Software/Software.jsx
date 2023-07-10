@@ -2,8 +2,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import Layout from "../../../../components/Layout/Layout";
 import PageHeader from "../../../../components/PageHeader/PageHeader";
 import styles from "./Software.module.css";
-import BusinessTabMenu from "../../../../components/Business/TapMenu.module.css/TapMenu";
 import BusinessTabMenu2 from "../../../../components/Business/TabMenu2/TabMenu2";
+import BusinessCustomer from "../../BusinessCustomer/BusinessCustomer";
 
 export default function Software() {
   return (
@@ -40,6 +40,7 @@ export default function Software() {
         </li>
       </BusinessTabMenu2>
       <Outlet />
+      <BusinessCustomer />
     </Layout>
   );
 }
