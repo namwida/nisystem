@@ -19,8 +19,7 @@ export default function Consulting() {
       <PageHeader
         gnbname="business"
         title="Consulting"
-        destription="고성능 스마트기기의 증가와 영상 통화 등 고급 애플리케이션 보급으로"
-        destription_add="기업은 빠르고 품질좋은 무선랜과 이를 위한 인프라를 필요로 합니다."
+        destription="고객이 만족하는 IT 서비스를 사용하도록 환경에 맞는 최적화된 솔루션을 설계하여 제시해드립니다."
       />
       <main className={styles.besiness_consulting}>
         <div className={`${styles.inner}`}>

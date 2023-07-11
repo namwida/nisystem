@@ -15,8 +15,7 @@ export default function MSP() {
       <PageHeader
         gnbname="business"
         title="MSP"
-        destription="고성능 스마트기기의 증가와 영상 통화 등 고급 애플리케이션 보급으로"
-        destription_add="기업은 빠르고 품질좋은 무선랜과 이를 위한 인프라를 필요로 합니다."
+        destription="엔아이시스템의 전문인력 및 IT 자원을 활용하여 전반적인 고객사의 IT 시스템을 체계적으로 운용, 관리해드립니다."
       />
       <main className={styles.besiness_msp}>
         <div className={`${styles.inner}`}>
