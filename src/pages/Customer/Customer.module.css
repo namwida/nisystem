@@ -2,8 +2,9 @@
   padding-top: var(--main-top);
 }
 .customer section {
-  max-width: 800px;
+  margin: 0 auto;
   padding: 40px;
+  max-width: 800px;
   background-color: #eef3f6;
   border-radius: 4px;
 }

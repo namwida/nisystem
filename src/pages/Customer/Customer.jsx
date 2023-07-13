@@ -58,7 +58,7 @@ export default function Customer() {
       <PageHeader
         gnbname="customer"
         title="고객문의"
-        destription="엔아이시스템은 고객님의 말씀에 귀를 기울이며 언제나 편안한 서비스를 제공하기 위하여 최선을 다하겠습니다."
+        destription="고객님의 말씀에 귀를 기울이며 최선을 다하겠습니다."
       />
       <main className={`${styles.customer} inner`}>
         <section>
